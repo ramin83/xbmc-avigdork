@@ -1,0 +1,44 @@
+v1.7.5
+New - Can update automaticaly from repository.
+-------------
+v1.7
+Fix - UI changes
+Fix - On programmes list: "Now playing programme" at the top.
+Add - On Settings, you can change location of remote channels-list (xml and txt).
+Add - On Settings, you can change the local folder. 
+     (defualt: "[Home folder]\userdata\addon_data\plugin.video.MyFilmOn")
+Add - On Settings, you can save remote channels-list to local folder.
+-------------
+v1.6
+Fix - problem with E.P.G for some channels
+Added - Settings for addon, there are 4 options:
+    1. Use local playlist or from internet (Benny123's playlist).
+       put local files in "...XBMC\userdata\addon_data\plugin.video.MyFilmOn" folder.
+       examples of list files in "...XBMC\addons\plugin.video.MyFilmOn" folder.
+    2. Channel-list format (txt-file: "favoritesList.txt" or xml-file: "favoritesList.xml")
+    3. Show/Hide Categories on xml-based playlist
+    4. Choose E.P.G style
+Added - Now showing: channel name, program name and program times while watching a channel.
+UI updaed:
+    1. in channels list, ctegories marks as "<Category name>".
+    2. In channels list, added green "- Play" or red "- Guide" to remember you if you are in E.P.G list or not.
+    3. In programs list of a channel, the "now playing" program color is red.
+-------------
+v1.5
+Fix - problem with some channel
+Added - Now showing Channel name and icon while watching a channel.
+-------------
+v1.4
+Fix "script error" message.
+-------------
+v1.3
+Fix errors while playing some channels.
+-------------
+v1.2
+Add support for iOS and Linux devices
+-------------
+v1.1
+Change source page - fix problem with some channels
+-------------
+v1.0
+First Release

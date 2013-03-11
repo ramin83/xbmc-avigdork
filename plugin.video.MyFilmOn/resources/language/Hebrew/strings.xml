@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+	<string id="55001">הגדרות פרטיות</string>
+	<string id="55002">שימוש ברשימת ערוצים מקומית</string>
+	<string id="55003">הגדרות תצוגה</string>
+	<string id="55004">חלוקה לקטגוריות (רק בקובץ xml)</string>
+	<string id="55005">סוג קובץ רשימת הערוצים</string>
+	<string id="55006">סגנון תצוגת E.P.G</string>
+	<string id="55007">מיקום קובץ תחנות TXT:</string>
+	<string id="55008">מיקום קובץ תחנות XML:</string>
+	<string id="55009">שמירת קובץ תחנות XML בתיקיה מקומית</string>
+	<string id="55010">שמירת קובץ תחנות TXT בתיקיה מקומית</string>
+	<string id="55011">הקובץ נשמר בתיקיה המקומית</string>
+	<string id="55012">הערוץ כבר לא קיים</string>
+</strings>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="55001">
+		<setting id="local_playlist" type="bool" label="55002" default="false" />
+		<setting type="sep"/>
+		<setting id="remoteTxtList" type="text" label="55007" default="https://dl.dropbox.com/u/94071174/favotitesList.txt" />
+		<setting id="remoteXmlList" type="text" label="55008" default="http://dl.dropbox.com/u/26001898/XBMC/favoritesList.xml" />
+		<setting type="sep"/>
+		<setting id="localFolder" type="folder" label="Choose lists local folder:" source="auto" option="writeable"/>
+		<setting type="sep"/>
+		<setting type="action" label="55009" action="RunScript($CWD/default.py,,?mode=5&url=copyXML)"/>
+		<setting type="action" label="55010" action="RunScript($CWD/default.py,,?mode=5&url=copyTXT)"/>
+	</category>
+	<category label="55003">
+		<setting id="fileExt" type="labelenum" label="55005" values="txt|xml" default="txt" />
+		<setting type="sep"/>
+		<setting id="categories" type="bool" label="55004" default="true" />
+		<setting type="sep"/>
+		<setting id="EpgStyle" type="labelenum" label="55006" values="503|504" default="503" />
+	</category>
+</settings>

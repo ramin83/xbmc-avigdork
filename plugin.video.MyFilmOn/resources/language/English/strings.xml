@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+	<string id="55001">Personal Settings</string>
+	<string id="55002">Use local playlist file</string>
+	<string id="55003">Display Settings</string>
+	<string id="55004">Show categories (xml only)</string>
+	<string id="55005">Channel list file format</string>
+	<string id="55006">E.P.G style</string>
+	<string id="55007">Remote TXT list file:</string>
+	<string id="55008">Remote XML list file:</string>
+	<string id="55009">Save remote XML list to local folder</string>
+	<string id="55010">Save remote TXT list to local folder</string>
+	<string id="55011">The file saved to the local folder.</string>
+	<string id="55012">Cannot find the channel</string>
+</strings>
