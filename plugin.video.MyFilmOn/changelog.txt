@@ -1,3 +1,6 @@
+v1.7.7
+No changes - Trying update from repository, second try..
+-------------
 v1.7.6
 No changes - Trying update from repository
 -------------
