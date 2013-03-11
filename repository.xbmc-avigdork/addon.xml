@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.xbmc-avigdork" name="Avigdor's XBMC Repository" version="1.0.0" provider-name="avigdork">
+<addon id="repository.xbmc-avigdork" name="Avigdor's XBMC Repository" version="1.0.1" provider-name="avigdork">
     <extension point="xbmc.addon.repository" name="XBMC Israeli streaming repo for streaming sites">
         <info compressed="false">https://raw.github.com/avigdork/xbmc-avigdork/master/addons.xml</info>
         <checksum>https://raw.github.com/avigdork/xbmc-avigdork/master/addons.xml.md5</checksum>
