@@ -1,4 +1,4 @@
-v1.7.85
+v1.7.89
 New - Can update automaticaly from repository.
 -------------
 v1.7
