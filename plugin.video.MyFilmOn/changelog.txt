@@ -1,3 +1,6 @@
+v1.8.3
+Fix - new update the default.py that I forgot to update at last ver.
+-------------
 v1.8.2
 Fix - Can play some channels by getting details from other channel.
       example: in favoritesList.txt, use: "67. ITV2. 11", ITV2 (67) getting details from ITV1 (11) channel.
