@@ -1,0 +1,759 @@
+<?xml version="1.0"?>
+	<data>
+		<category id="1" name="Arabic Live TV">
+			<channel id="366" name="Al Arabiya" />
+			<channel id="367" name="MBC" />
+			<channel id="368" name="MBC2" />
+			<channel id="369" name="MBC Action" />
+			<channel id="908" name="iFilm" />
+		</category>
+		<category id="2" name="Asian Live TV">
+			<channel id="812" name="Trans TV" />
+			<channel id="813" name="Trans 7" />
+			<channel id="932" name="Arirang TV" />
+		</category>
+		<category id="3" name="Australian Live TV">
+			<channel id="1007" name="ABC Australia" />
+		</category>
+		<category id="4" name="Bikini Live TV">
+			<channel id="380" name="Bikini TeeVee" />
+			<channel id="790" name="Party TeeVee" />
+			<channel id="866" name="MiamiTV" />
+		</category>
+		<category id="5" name="Business New Radio and Podcast">
+			<channel id="1155" name="Wall Street Journal What's News" />
+			<channel id="1156" name="APM: Marketplace Tech Report" />
+			<channel id="1157" name="Wall Street Journal's Your Money Matters" />
+			<channel id="1162" name="Wall Street Journal This Morning" />
+			<channel id="1163" name="Money Girl's Quick and Dirty Tips for a Richer Life" />
+			<channel id="1164" name="This Week in Startups - Audio" />
+			<channel id="1166" name="Wall Street Journal on Small Business" />
+			<channel id="1167" name="NPR: Planet Money Podcast" />
+			<channel id="1168" name="Get-It-Done Guy's Quick and Dirty Tips to Work Less and Do More" />
+			<channel id="1174" name="Red, White and Blue Chips" />
+			<channel id="1175" name="BusinessWeek -- Behind This Week's Cover Story" />
+		</category>
+		<category id="6" name="Business News Video On Demand">
+			<channel id="1160" name="MAD MONEY W/ JIM CRAMER - Full Episode" />
+			<channel id="1165" name="This Week in Startups - Video" />
+			<channel id="1169" name="MSNBC's Your Business" />
+			<channel id="1170" name="CNBC's \" />
+			<channel id="1171" name="CNBC's \" />
+			<channel id="1172" name="WealthTrack" />
+			<channel id="1173" name="CNBC's \" />
+		</category>
+		<category id="7" name="Cars Video On Demand">
+			<channel id="1176" name="SPEED X Extreme Action Clips" />
+			<channel id="1177" name="SPEED Engine Block" />
+			<channel id="1179" name="Radio Le Mans" />
+			<channel id="1181" name="Barrett-Jackson Collector Car Auction Highlight Clips" />
+			<channel id="1183" name="K and N Videos" />
+			<channel id="1184" name="GERMAN CARS. 29MOTOGUIDE." />
+			<channel id="1185" name="FAST SPORTS CARS. SPORTS CAR27." />
+		</category>
+		<category id="8" name="Comedy Live TV">
+			<channel id="344" name="ComedyTime TV" />
+			<channel id="407" name="FilmOn at the Improv" />
+			<channel id="497" name="Urban Comedy " />
+			<channel id="716" name="Popcorn TV" />
+			<channel id="1013" name="Supa Pirate Booty Hunt" />
+		</category>
+		<category id="9" name="Comedy Radio">
+			<channel id="387" name="Kevin Spencer TV" />
+			<channel id="1186" name="The Dennis Miller Show" />
+			<channel id="1187" name="Heidi and Frank Whole Show" />
+			<channel id="1189" name="WTF with Marc Maron Podcast" />
+			<channel id="1190" name="The Adam Carolla Show" />
+			<channel id="1193" name="Distorted View Daily" />
+			<channel id="1194" name="The Mike OMeara Show" />
+			<channel id="1195" name="Pod Is My Copilot" />
+			<channel id="1196" name="Stop Podcasting Yourself" />
+			<channel id="1197" name="Comedy Bang Bang: The Podcast" />
+			<channel id="1199" name="Big Broadcast (Old Time Radio)" />
+			<channel id="1200" name="APM: A Prairie Home Companion's News from Lake Wobegon" />
+			<channel id="1201" name="Laugh Out Loud from CBC Radio" />
+			<channel id="1202" name="The Bugle" />
+			<channel id="1203" name="Friday Night Comedy from BBC Radio 4" />
+			<channel id="1204" name="Metro And Gordon Do The Internet (mp3)" />
+			<channel id="1205" name="Episodes of The Irrelevant Show from CBC Radio" />
+			<channel id="1207" name="Laugh Out Loud's Laugh of the Day from CBC Radio" />
+			<channel id="1208" name="Onion Radio News" />
+		</category>
+		<category id="10" name="Comedy Video On Demand">
+			<channel id="1099" name="College Humor" />
+			<channel id="1102" name="Kevin Pollak's Chat Show" />
+			<channel id="1105" name="Onion News Network" />
+			<channel id="1108" name="The Ricky Gervais Podcast" />
+			<channel id="1111" name="The New Yorker Animated Cartoons" />
+			<channel id="1114" name="Dilbert Animated Cartoons" />
+			<channel id="1117" name="Old Jews Telling Jokes" />
+			<channel id="1198" name="Friday Night Cranks" />
+			<channel id="1209" name="Rhett and Link" />
+		</category>
+		<category id="11" name="Coming Soon">
+			<channel id="190" name="Test" />
+			<channel id="235" name="Live Well NY" />
+			<channel id="1621" name="FightBox" />
+			<channel id="1624" name="DocuBox" />
+			<channel id="1627" name="FashionBox" />
+			<channel id="1630" name="COZI TV" />
+			<channel id="1651" name="WFUT" />
+			<channel id="1654" name="WXTV Univision" />
+		</category>
+		<category id="12" name="Documentary Live TV">
+			<channel id="381" name="War and Crime Network " />
+			<channel id="491" name="War in Color" />
+			<channel id="805" name="The war channel" />
+			<channel id="1016" name="World of..." />
+		</category>
+		<category id="13" name="Education Live TV">
+			<channel id="305" name="The Florida Channel" />
+			<channel id="808" name="UWTV" />
+		</category>
+		<category id="14" name="Education Radio and Podcasts">
+			<channel id="334" name="University of California" />
+			<channel id="1222" name="APM: Garrison Keillor's The Writer's Almanac Podcast feed" />
+			<channel id="1223" name="History According to Bob" />
+			<channel id="1224" name="The Dave Ramsey Show" />
+			<channel id="1225" name="Freakonomics Radio" />
+			<channel id="1226" name="Stuff You Missed in History Class" />
+			<channel id="1228" name="Dan Carlin's Hardcore History" />
+			<channel id="1229" name="Modern Manners Guy Quick and Dirty Tips for a More Polite Life" />
+			<channel id="1230" name="Legal Lad's Quick and Dirty Tips for a More Lawful Life" />
+			<channel id="1232" name="My History Can Beat Up Your Politics" />
+			<channel id="1233" name="Big Ideas (Audio)" />
+			<channel id="1235" name="Grammar Girl Quick and Dirty Tips for Better Writing" />
+			<channel id="1236" name="The Public Speaker's Quick and Dirty Tips for Improving Your Communication Skills" />
+			<channel id="1237" name="APM: American RadioWorks" />
+			<channel id="1238" name="Adobe Creative Suite Video Podcast" />
+			<channel id="1239" name="NPR: Intelligence Squared Podcast" />
+			<channel id="1299" name="Learn Japanese | JapanesePod101.com (Audio)" />
+			<channel id="1300" name="LearnItalianPod.com - Learn to Speak Italian with Podcasts" />
+			<channel id="1301" name="Learn German | GermanPod101.com" />
+			<channel id="1302" name="Learn French with daily podcasts" />
+			<channel id="1303" name="ArabicPod - Learn Arabic" />
+			<channel id="1304" name="Coffee Break Spanish" />
+			<channel id="1305" name="Mandarin Chinese Lessons with Serge Melnyk" />
+			<channel id="1306" name="Learn Hindi from Bollywood Movies. India style." />
+			<channel id="1307" name="Coffee Break French" />
+			<channel id="1308" name="Learn Spanish - Survival Guide" />
+			<channel id="1419" name="MedicCast Audio Podcast for EMT Paramedics and EMS Students" />
+		</category>
+		<category id="15" name="Education Video On Demand">
+			<channel id="1221" name="TEDTalks (video)" />
+			<channel id="1227" name="Photoshop User TV" />
+		</category>
+		<category id="16" name="Entertainment Radio">
+			<channel id="1385" name="NPR Topics: Story of the Day Podcast" />
+			<channel id="1426" name="NPR Topics: Environment Podcast" />
+			<channel id="1447" name="Ask Anything - From E! - Audio Podcast" />
+			<channel id="1449" name="Widescreen Warrior.com - Weekly Blend Audio Show" />
+			<channel id="1458" name="NPR Topics: Pop Culture Podcast" />
+		</category>
+		<category id="17" name="Entertainment Video On Demand">
+			<channel id="1069" name="TMZ Live" />
+			<channel id="1072" name="The Ellen Show" />
+			<channel id="1075" name="Chelsea Lately Video Podcast" />
+			<channel id="1078" name="The Soup Video Podcast" />
+			<channel id="1081" name="Showbiz Tonight" />
+			<channel id="1084" name="Live from the Red Carpet" />
+			<channel id="1087" name="Sky News - Spotlight Entertainment" />
+			<channel id="1465" name="Best of YouTube (video)" />
+		</category>
+		<category id="18" name="Fashion Video On Demand">
+			<channel id="21" name="Fashion TV" />
+			<channel id="1126" name="Put this on" />
+			<channel id="1129" name="Fashion network" />
+			<channel id="1132" name="Chanel Fashion" />
+			<channel id="1135" name="CHIC.TV Fashion" />
+			<channel id="1138" name="Global Fashion News" />
+			<channel id="1141" name="WORMLAND Men's Fashion Podcast" />
+			<channel id="1144" name="MODTV FASHION" />
+			<channel id="1240" name="tranquility du jour" />
+		</category>
+		<category id="19" name="Galaxie Radio Music">
+			<channel id="536" name="GALAXIE ADULT ALTERNATIVE" />
+			<channel id="539" name="GALAXIE CLASSIC MASTERS" />
+			<channel id="542" name="GALAXIE CLASSIC ROCK" />
+			<channel id="545" name="GALAXIE COUNTRY CLASSICS" />
+			<channel id="548" name="GALAXIE EASY LISTENING" />
+			<channel id="551" name="GALAXIE FLASHBACK 70S" />
+			<channel id="554" name="GALAXIE FOLK ROOTS" />
+			<channel id="557" name="GALAXIE HIT LIST" />
+			<channel id="560" name="GALAXIE HOT COUNTRY" />
+			<channel id="563" name="GALAXIE JAMMIN" />
+			<channel id="566" name="GALAXIE JAZZ MASTERS" />
+			<channel id="569" name="GALAXIE JUKEBOX OLDIES" />
+			<channel id="572" name="GALAXIE KIDS STUFF" />
+			<channel id="575" name="GALAXIE LATINO TROPICAL" />
+			<channel id="578" name="GALAXIE POP ADULT" />
+			<channel id="581" name="GALAXIE POP CLASSICS" />
+			<channel id="584" name="GALAXIE EVERYTHING 80S" />
+			<channel id="587" name="GALAXIE ROCK" />
+			<channel id="590" name="GALAXIE ROCK ALTERNATIVE" />
+			<channel id="593" name="GALAXIE SMOOTH JAZZ" />
+			<channel id="596" name="GALAXIE SOUL STORM" />
+			<channel id="599" name="GALAXIE STANDARDS" />
+			<channel id="602" name="GALAXIE THE BLUES" />
+			<channel id="605" name="GALAXIE THE LIGHT" />
+			<channel id="608" name="GALAXIE URBAN BEATS" />
+			<channel id="611" name="GALAXIE NOTHIN' BUT 90'S" />
+			<channel id="614" name="GALAXIE MAXIMUM PARTY" />
+			<channel id="617" name="GALAXIE DANCE CLUBBN'" />
+			<channel id="620" name="GALAXIE BLUEGRASS" />
+			<channel id="623" name="GALAXIE BIG BAND" />
+			<channel id="626" name="GALAXIE JAZZ NOW" />
+			<channel id="629" name="GALAXIE THE CHILL LOUNGE" />
+			<channel id="632" name="GALAXIE THE SPA" />
+			<channel id="635" name="GALAXIE BAROQUE" />
+			<channel id="638" name="GALAXIE OPERA PLUS" />
+			<channel id="641" name="GALAXIE CHAMBER MUSIC" />
+			<channel id="644" name="GALAXIE TODAY'S LATIN POP" />
+			<channel id="647" name="GALAXIE RETRO R and B" />
+			<channel id="650" name="GALAXIE NO FENCES" />
+			<channel id="653" name="GALAXIE DANCE CLASSICS" />
+			<channel id="656" name="GALAXIE HOLIDAY HITS" />
+			<channel id="659" name="GALAXIE HARD ROCK" />
+			<channel id="662" name="GALAXIE ALT ROCK CLASSICS" />
+			<channel id="665" name="GALAXIE ROCK ALT-COUNTRY AMERICANA" />
+			<channel id="668" name="GALAXIE GOSPEL" />
+			<channel id="671" name="GALAXIE CELTIC" />
+			<channel id="674" name="GALAXIE RETRO LATINO" />
+			<channel id="677" name="GALAXIE LATINO URBANA" />
+			<channel id="680" name="GALAXIE LATINO TEJANO" />
+			<channel id="683" name="GALAXIE REGIONAL MEXICAN" />
+		</category>
+		<category id="20" name="Gamer Radio">
+			<channel id="1567" name="IGN Games Podcasts" />
+			<channel id="1569" name="Video Game Outsiders" />
+			<channel id="1570" name="The Geekbox" />
+			<channel id="1571" name="Player One Podcast" />
+			<channel id="1572" name="Giant Bombcast" />
+			<channel id="1573" name="4Player Podcast" />
+			<channel id="1575" name="Official Xbox Magazine" />
+			<channel id="1577" name="PC Gamer \u00bb US Podcast" />
+			<channel id="1578" name="Fast Karate for the Gentleman" />
+			<channel id="1579" name="Weekend Confirmed: The Video Game Show" />
+			<channel id="1580" name="Rebel FM" />
+			<channel id="1581" name="Major Nelson Radio" />
+			<channel id="1582" name="Big Red Barrel \u00bb BRB WTF" />
+			<channel id="1583" name="Big Red Barrel \u00bb Playstation Podcast" />
+			<channel id="1584" name="Barrel Roll! - A Video Game Podcast" />
+			<channel id="1586" name="GeekNights Mondays: Science Technology Computing" />
+			<channel id="1587" name="The Fanboys \u00bb Podcasts" />
+			<channel id="1589" name="1UP.com - 1UP Radio" />
+		</category>
+		<category id="21" name="Gamer Video On Demand">
+			<channel id="1568" name="IGN.com - Daily Fix (Video)" />
+			<channel id="1576" name="Video Reviews - GameTrailers.com" />
+			<channel id="1585" name="X-Play's Video Podcast" />
+		</category>
+		<category id="22" name="Horror Live TV">
+			<channel id="256" name="RSquared" />
+			<channel id="315" name="Macabre Theatre" />
+			<channel id="339" name="Terror-Flix" />
+			<channel id="390" name="Linkct Network" />
+			<channel id="393" name="American Horrors" />
+			<channel id="836" name="horror channel" />
+		</category>
+		<category id="23" name="Interactive Live TV">
+			<channel id="191" name="BattleCam TV" />
+			<channel id="324" name="Battlecam People" />
+			<channel id="412" name=" PPV Celebrity Fight" />
+			<channel id="460" name="Janice TV" />
+			<channel id="733" name="Dave Live" />
+			<channel id="758" name="Kato" />
+			<channel id="761" name="Situation" />
+			<channel id="764" name="Rampage" />
+			<channel id="767" name="Andy Dick " />
+			<channel id="899" name="Zolar Live" />
+		</category>
+		<category id="24" name="Kids Live TV">
+			<channel id="401" name="Smile of Child" />
+			<channel id="719" name="Emba Kids" />
+			<channel id="793" name="Kartoon Klassics" />
+			<channel id="799" name="Animal Atlas" />
+			<channel id="1281" name="The WDW Radio Show - Your Walt Disney World Information Station" />
+			<channel id="1298" name="The Legend of Korra" />
+		</category>
+		<category id="25" name="Kids Radio and Podcasts">
+			<channel id="1282" name="Storynory - Stories For Kids" />
+			<channel id="1283" name="Inside the Magic - Your source for Disney news and all theme park fun!" />
+			<channel id="1285" name="Spare the Rock, Spoil the Child Playlists" />
+			<channel id="1287" name="The Official Adventures in Odyssey Podcast" />
+			<channel id="1289" name="The MuppetCast" />
+		</category>
+		<category id="26" name="Kids Video On Demand">
+			<channel id="1286" name="Sesame Street Podcast" />
+			<channel id="1288" name="Big Cat Rescue" />
+			<channel id="1291" name="iCarly" />
+			<channel id="1293" name="How To Rock" />
+			<channel id="1297" name="Nanovor: The Animated Series" />
+		</category>
+		<category id="27" name="Latin Live TV">
+			<channel id="23" name="RTVE" />
+			<channel id="259" name="Berea-V" />
+			<channel id="299" name="RT Espa\u00f1ol" />
+			<channel id="303" name="RTP international" />
+			<channel id="308" name="V Me" />
+			<channel id="526" name="Andalucia TV" />
+			<channel id="1610" name="CTN International" />
+		</category>
+		<category id="28" name="Lifestyle Live TV">
+			<channel id="239" name="UNRELIABLE SOURCES" />
+			<channel id="262" name="Motorz" />
+			<channel id="263" name="Wine Channel TV" />
+			<channel id="332" name="Jewish Life TV" />
+			<channel id="340" name="The Walk TV" />
+			<channel id="383" name="Veg TV" />
+			<channel id="386" name="GeoBeats Travel" />
+			<channel id="396" name="Men7" />
+			<channel id="414" name="Time TV" />
+			<channel id="700" name="INSP" />
+			<channel id="710" name="Eco-Rico" />
+			<channel id="728" name="The Miki Show" />
+			<channel id="770" name="PopStop TV" />
+			<channel id="782" name="BUZZ TV" />
+			<channel id="784" name="Steel Dreams" />
+			<channel id="787" name="Distant Roads" />
+			<channel id="842" name="Travel Channel+1" />
+			<channel id="911" name="Eye for an Eye" />
+			<channel id="1022" name="Simply Me" />
+			<channel id="1046" name="RMC On Air" />
+			<channel id="1049" name="OBXTV" />
+			<channel id="1123" name="Fitness TV" />
+			<channel id="1217" name="PCC Natural Markets Videos" />
+			<channel id="1219" name="Start Cooking" />
+			<channel id="1220" name="NYT's The Minimalist (Video)" />
+			<channel id="1405" name="Sex With Emily" />
+			<channel id="1607" name="CTN Lifestyle" />
+		</category>
+		<category id="29" name="Lifestyle Radio">
+			<channel id="1211" name="The Harvest Eating Podcast" />
+			<channel id="1214" name="KCRW's Good Food" />
+			<channel id="1215" name="The Splendid Table" />
+			<channel id="1400" name="PediaCast" />
+			<channel id="1401" name="The Mighty Mommy's Quick and Dirty Tips for Practical Parenting" />
+			<channel id="1402" name="Manic Mommies" />
+			<channel id="1406" name="Savage Lovecast" />
+			<channel id="1407" name="Pickup Podcast" />
+			<channel id="1408" name="Building Relationships with Dr. Gary Chapman" />
+			<channel id="1451" name="In Our Time With Melvyn Bragg" />
+			<channel id="1453" name="NPR: Most E-Mailed Stories Podcast" />
+			<channel id="1455" name="Bullseye with Jesse Thorn" />
+			<channel id="1457" name="This American Life" />
+			<channel id="1459" name="Writers and Company from CBC Radio" />
+			<channel id="1460" name="The Strand - A World of Arts" />
+			<channel id="1461" name="Book Review" />
+			<channel id="1463" name="World Book Club" />
+			<channel id="1464" name="Common Sense with Dan Carlin" />
+			<channel id="1558" name="Travel with Rick Steves" />
+			<channel id="1559" name="Amateur Traveler Podcast | travel for the love of it" />
+			<channel id="1561" name="Indie Travel Podcast" />
+			<channel id="1563" name="Irish Fireside" />
+			<channel id="1565" name="The Rest of Everest" />
+		</category>
+		<category id="30" name="Lifestyle Video On Demand">
+			<channel id="1212" name="Cooking Everything Outdoors" />
+			<channel id="1213" name="Simply Ming Video Podcast" />
+			<channel id="1216" name="GrateTV" />
+			<channel id="1218" name="GrapeRadio \u2013 Wine Talk Show" />
+			<channel id="1404" name="DadLabs" />
+			<channel id="1452" name="Monocle" />
+			<channel id="1456" name="Q with Jian Ghomeshi" />
+			<channel id="1536" name="NYT's Circuits with David Pogue (Video)" />
+			<channel id="1562" name="Travel with Rick" />
+			<channel id="1566" name="Yosemite Nature Notes" />
+		</category>
+		<category id="31" name="Local Live TV">
+			<channel id="5" name="CBS Miami" />
+			<channel id="124" name="ABC 7 NY" />
+			<channel id="131" name="KPBS " />
+			<channel id="136" name="FOX NY" />
+			<channel id="153" name="Qubo" />
+			<channel id="154" name="NBC NY" />
+			<channel id="181" name="KTLA" />
+			<channel id="196" name="CBS NY " />
+			<channel id="200" name="KDOC DT" />
+			<channel id="209" name="WPIX" />
+			<channel id="233" name="World" />
+			<channel id="363" name="Renault TV" />
+			<channel id="392" name="WNET" />
+			<channel id="689" name="BattleCam" />
+			<channel id="821" name="BOUNCE " />
+			<channel id="827" name="Telemundo NY" />
+			<channel id="863" name="KIDS" />
+			<channel id="869" name="PBS CH" />
+			<channel id="872" name="CW CH" />
+			<channel id="875" name="CBS CH" />
+			<channel id="878" name="NBC CH" />
+			<channel id="881" name="Fox CH" />
+			<channel id="884" name="ABC CH" />
+			<channel id="917" name="NBC (login)" />
+			<channel id="920" name="CBS (login)" />
+			<channel id="923" name="Fox (login)" />
+			<channel id="926" name="ABC 7 (login)" />
+			<channel id="929" name="The CW (login)" />
+			<channel id="934" name="Fox Dallas" />
+			<channel id="937" name="NBC Dallas" />
+			<channel id="940" name="ABC Dallas" />
+			<channel id="943" name="CBS Dallas" />
+			<channel id="986" name="NBC Miami" />
+			<channel id="989" name="ABC Miami" />
+			<channel id="997" name="NBC Washington" />
+			<channel id="998" name="ABC Washington" />
+			<channel id="1001" name="Fox Washington" />
+			<channel id="1004" name="CBS Washington" />
+			<channel id="1591" name="ABC Denver" />
+			<channel id="1594" name="NBC Denver" />
+			<channel id="1597" name="CBS Denver" />
+		</category>
+		<category id="32" name="main">
+			<channel id="354" name="QVC Deutschland" />
+			<channel id="355" name="QVC PLUS" />
+			<channel id="359" name="zdf.kultur" />
+			<channel id="360" name="ZDFneo" />
+			<channel id="364" name="M6 BOUTIQUE LA CHAINE" />
+			<channel id="379" name="Camera dei Deputati" />
+			<channel id="415" name="Eins Extra" />
+			<channel id="418" name="Eins Plus" />
+			<channel id="421" name="Eins Festival" />
+			<channel id="424" name="Phoenix" />
+			<channel id="442" name="Canale Italia 84" />
+			<channel id="445" name="Canale Italia" />
+			<channel id="451" name="Studio Europa" />
+			<channel id="454" name="Justice TV" />
+			<channel id="463" name="QVC Italia" />
+			<channel id="517" name="TV5MONDE EUROPE" />
+			<channel id="706" name="Sonnenklar TV" />
+		</category>
+		<category id="33" name="Mind Body and Spirit Live TV">
+			<channel id="304" name="Supreme Master TV" />
+			<channel id="410" name="FITNESS LIFESTYLE TV" />
+		</category>
+		<category id="34" name="Mind Body and Spirit Radio">
+			<channel id="1245" name="The Nutrition Diva's Quick and Dirty Tips for Eating Well and Feeling Fabulous" />
+			<channel id="1248" name="The Jillian Michaels Show" />
+			<channel id="1255" name="Get-Fit Guy's Quick and Dirty Tips to Slim Down and Shape Up" />
+			<channel id="1258" name="The Fat-Burning Man Show " />
+			<channel id="1267" name="Thrive Personal Fitness" />
+			<channel id="1269" name="20 min. Yoga Sessions from YogaDownload.com" />
+			<channel id="1462" name="On Being with Krista Tippett" />
+		</category>
+		<category id="35" name="Mind Body and Spirit Video On Demand">
+			<channel id="212" name="CORNERSTONE TV" />
+			<channel id="1256" name="YOGAmazing" />
+			<channel id="1257" name="POWER BLAST Podcast" />
+			<channel id="1259" name="Namaste Yoga with Dr Melissa West" />
+			<channel id="1262" name="Pilates Podcasts from Balanced Body" />
+			<channel id="1265" name="Yoga and other useful stuff with Tara Stiles" />
+			<channel id="1266" name="Fit Life" />
+			<channel id="1270" name="John McConnell Yoga" />
+			<channel id="1271" name="fit and gesund | Video Podcast | Deutsche Welle" />
+			<channel id="1272" name="Sean vigue fitness" />
+			<channel id="1274" name="Huggacasts (Bike Hugger Podcasts)" />
+			<channel id="1276" name="Pilates, Yoga, Total Body, Meditation" />
+			<channel id="1279" name="The Fitness Guru" />
+		</category>
+		<category id="36" name="Movie Live TV">
+			<channel id="10" name="FilmOn Martial Arts" />
+			<channel id="206" name="FilmOn Classics" />
+			<channel id="290" name="Mini Movies" />
+			<channel id="310" name="FilmOn Grab Bag TV" />
+			<channel id="336" name="Cultra" />
+			<channel id="382" name="Sci-Fi Telly" />
+			<channel id="384" name="The Western Channel" />
+			<channel id="411" name="Hollywoodland Channel" />
+			<channel id="494" name="Filmon Stars" />
+			<channel id="500" name="Action Cinema" />
+			<channel id="503" name="Inspirational films" />
+			<channel id="514" name="Threshold " />
+			<channel id="707" name="American Primetime Television" />
+			<channel id="779" name="MyFamily TV East" />
+			<channel id="983" name="Punch TV" />
+			<channel id="1045" name="Action Zone" />
+			<channel id="1052" name="Matriarch TV" />
+		</category>
+		<category id="37" name="Music Live TV">
+			<channel id="257" name="FilmOn Music Legends TV" />
+			<channel id="309" name="Classic Arts Showcase" />
+			<channel id="311" name="FilmOn Rock TV" />
+			<channel id="342" name="The Country Network" />
+			<channel id="347" name="Urban Music Network" />
+			<channel id="350" name="The Soundtrack Channel" />
+			<channel id="385" name="The Noise Network" />
+			<channel id="400" name="JCTV" />
+			<channel id="530" name="FilmOn Jazz and Blues" />
+			<channel id="1042" name="Vintage Music TV" />
+			<channel id="1317" name="KEXP Song of the Day" />
+			<channel id="1320" name="Q: The Podcast from CBC Radio" />
+			<channel id="1336" name="Irish and Celtic Music Podcast" />
+			<channel id="1337" name="Above and Beyond: Group Therapy" />
+		</category>
+		<category id="38" name="Music Radio">
+			<channel id="1180" name="NPR: Car Talk Podcast" />
+			<channel id="1309" name="BBC Music Magazine" />
+			<channel id="1311" name="NPR: Live In Concert from NPR's All Songs Considered Podcast" />
+			<channel id="1312" name="KCRW's Today's Top Tune" />
+			<channel id="1315" name="remix.nin.com - Newest Mixes" />
+			<channel id="1316" name="Coverville" />
+			<channel id="1319" name="NPR: All Songs Considered Podcast" />
+			<channel id="1321" name="KEXP Live Performances Podcast" />
+			<channel id="1323" name="Classical Performance Podcast" />
+			<channel id="1327" name="Perfecto Podcast: featuring Paul Oakenfold" />
+			<channel id="1328" name="AMPed New Music Weekly" />
+			<channel id="1329" name="In the Groove, Jazz and Beyond" />
+			<channel id="1330" name="KEXP Presents Mind Over Matters Sustainability Segment" />
+			<channel id="1331" name="Endless Boundaries" />
+			<channel id="1332" name="Sound Opinions" />
+			<channel id="1333" name="Indie Disco" />
+			<channel id="1334" name="Bluegrass Highway" />
+			<channel id="1339" name="Scotland Introducing" />
+			<channel id="1340" name="The Deadpod" />
+			<channel id="1341" name="Music Popcast" />
+			<channel id="1342" name="KEXP Presents Music That Matters" />
+			<channel id="1343" name="The Watt From Pedro Show" />
+			<channel id="1345" name="House of Reggae" />
+			<channel id="1346" name="Song of the Day" />
+			<channel id="1347" name="Hype Machine Radio Show" />
+			<channel id="1348" name="Raven and Blues" />
+			<channel id="1349" name="Canada Live from CBC Radio 2" />
+			<channel id="1350" name="WNYC's Radiolab" />
+			<channel id="1351" name="Radio Africa Online Mixes" />
+			<channel id="1355" name="NPR: World Cafe Words and Music from WXPN Podcast" />
+			<channel id="1357" name="The FADER \u00bb PODCASTS" />
+			<channel id="1358" name="Sphere of Hip-Hop Podcast" />
+			<channel id="1360" name="The Dub Zone" />
+			<channel id="1363" name="This Ordinary Guy" />
+			<channel id="1365" name="Acoustic Long Island" />
+			<channel id="1366" name="Mark Rushton's Ambient and Electronic Music Podcast" />
+			<channel id="1368" name="DIY Musician Podcast" />
+			<channel id="1369" name="Reign Radio" />
+			<channel id="1370" name="FadeEm Mixtape Series(Free HipHop-Reggae-Dancehall-Soca-Reggaeton Mixes)" />
+			<channel id="1372" name="FVF RECORDS" />
+		</category>
+		<category id="39" name="Music Shows On Demand">
+			<channel id="1310" name="NPR: Tiny Desk Concerts Podcast" />
+			<channel id="1314" name="CD Baby Music Discovery Podcast and Blog" />
+			<channel id="1325" name="Sound and Vision Radio" />
+			<channel id="1353" name="This Week in Music - Video" />
+			<channel id="1356" name="La s\u00e9lection de Bande \u00e0 part, sans chapitres" />
+			<channel id="1359" name="The Alternate Side Staff Pick" />
+			<channel id="1367" name="WBEZ's Live Music Thursday" />
+			<channel id="1373" name="First Take" />
+		</category>
+		<category id="40" name="News Live TV">
+			<channel id="4" name="Al Jazeera" />
+			<channel id="81" name="Bloomberg" />
+			<channel id="93" name="Russia Today" />
+			<channel id="298" name="France24" />
+			<channel id="329" name="WeatherNation" />
+			<channel id="330" name="NASA HD" />
+			<channel id="333" name="The Pentagon" />
+			<channel id="343" name="BizTV" />
+			<channel id="464" name="MHz Worldview" />
+			<channel id="697" name="Free Speech TV" />
+			<channel id="725" name="DVIDs TV" />
+			<channel id="905" name="Press TV" />
+			<channel id="1394" name="President Obama's Weekly Address" />
+		</category>
+		<category id="41" name="News Radio and Podcast">
+			<channel id="1150" name="NPR: Hourly News Summary Podcast" />
+			<channel id="1374" name="The Alex Jones Show - Infowars.com" />
+			<channel id="1375" name="Global News" />
+			<channel id="1376" name="NPR: Shuffle Podcast" />
+			<channel id="1379" name="Alan Colmes Show" />
+			<channel id="1380" name="MSNBC Rachel Maddow (audio)" />
+			<channel id="1381" name="NBC Nightly News (audio)" />
+			<channel id="1382" name="FOX Across America" />
+			<channel id="1383" name="MSNBC Hardball with Chris Matthews" />
+			<channel id="1384" name="CNN Radio News" />
+			<channel id="1387" name="NPR Programs: Fresh Air Podcast" />
+			<channel id="1388" name="Face the Nation on the Radio" />
+			<channel id="1390" name="Selected Shorts" />
+			<channel id="1391" name="NBC Meet the Press (audio)" />
+			<channel id="1392" name="60 Minutes - Full Audio" />
+			<channel id="1393" name="FOX News Sunday" />
+			<channel id="1396" name="FRONTLINE: Audiocast | PBS" />
+			<channel id="1397" name="WeatherBrains" />
+		</category>
+		<category id="42" name="News Video On Demand">
+			<channel id="1054" name="NBC Nightly News" />
+			<channel id="1057" name="NBC Today show" />
+			<channel id="1060" name="Anderson Cooper 360 Daily" />
+			<channel id="1063" name="MSNBC Morning Joe" />
+			<channel id="1066" name="NBC Meet the Press" />
+			<channel id="1378" name="MSNBC Rachel Maddow (video)" />
+			<channel id="1386" name="Video: CBS Evening News with Scott Pelley" />
+			<channel id="1395" name="Washington Week Video Podcast | PBS" />
+			<channel id="1399" name="State of the Union (video)" />
+		</category>
+		<category id="43" name="Pay $ Live TV">
+			<channel id="213" name="TVC Latino" />
+			<channel id="265" name="The Ski Channel" />
+			<channel id="295" name="My Combat Channel" />
+			<channel id="301" name="My Family TV" />
+			<channel id="302" name="FilmOn Breaking News" />
+			<channel id="335" name="Havoc Television" />
+			<channel id="341" name="eScapes HD TV" />
+			<channel id="394" name="WW Extreme" />
+			<channel id="395" name="Films On Reels" />
+			<channel id="397" name="Wheels TV" />
+			<channel id="402" name="R and R Television" />
+			<channel id="403" name="Wealth TV" />
+			<channel id="406" name="World of Martial Arts Television" />
+			<channel id="686" name="Sportskool" />
+			<channel id="691" name="Clubbing TV" />
+			<channel id="694" name="HRTV" />
+			<channel id="703" name="Halogen TV" />
+			<channel id="773" name="YouToo" />
+			<channel id="796" name="Ginx" />
+			<channel id="914" name="Ebru" />
+			<channel id="979" name="Ebru TV US" />
+		</category>
+		<category id="44" name="Religious Live TV">
+			<channel id="289" name="The Spirit Word Channel" />
+			<channel id="398" name="TBN" />
+			<channel id="399" name="The Church Channel" />
+			<channel id="833" name="DAYSTAR" />
+			<channel id="1601" name="Revival Television Network" />
+			<channel id="1604" name="CTN" />
+		</category>
+		<category id="45" name="Science and Technology Radio">
+			<channel id="1409" name="Science Magazine Podcast" />
+			<channel id="1411" name="WFIU-FM: A Moment of Science: Audio Podcast" />
+			<channel id="1412" name="Nature Podcast" />
+			<channel id="1414" name="NEJM This Week - Audio Summaries" />
+			<channel id="1415" name="Science Times" />
+			<channel id="1416" name="Point of Inquiry" />
+			<channel id="1417" name="Skeptoid" />
+			<channel id="1422" name="The Skeptics' Guide to the Universe" />
+			<channel id="1425" name="Quirks and Quarks Complete Show from CBC Radio" />
+			<channel id="1427" name="All In The Mind - Program podcast" />
+			<channel id="1430" name="- The Naked Scientists Podcast - Stripping Down Science" />
+			<channel id="1433" name="Brain Science Podcast" />
+			<channel id="1434" name="QuackCast" />
+			<channel id="1439" name="Discovery News Audio Podcast" />
+			<channel id="1498" name="Wall Street Journal Tech News Briefing" />
+			<channel id="1499" name="Tech News Today" />
+			<channel id="1502" name="Day in Tech History" />
+			<channel id="1503" name="This Week In Google" />
+			<channel id="1504" name="Security Now!" />
+			<channel id="1511" name="Daily Giz Wiz" />
+			<channel id="1512" name="MacBreak Weekly" />
+			<channel id="1513" name="Home Theater Geeks" />
+			<channel id="1514" name="Android App Addicts" />
+			<channel id="1515" name="TechStuff" />
+			<channel id="1516" name="Leo Laporte - The Tech Guy" />
+			<channel id="1517" name="this WEEK in TECH - MP3 Edition" />
+			<channel id="1518" name="iMore show" />
+			<channel id="1519" name="Into Tomorrow with Dave Graveline" />
+			<channel id="1520" name="The Social Hour" />
+			<channel id="1522" name="Windows Weekly" />
+			<channel id="1527" name="techzing tech podcast" />
+			<channel id="1529" name="This Week in Computer Hardware" />
+			<channel id="1530" name="Today in iOS Podcast - The Unofficial iOS, iPhone, iPad and iPod Touch News and iPhone Apps Podcast" />
+			<channel id="1532" name="Tech Weekly" />
+			<channel id="1533" name="Geek News Central Audio" />
+			<channel id="1539" name="IT Conversations" />
+			<channel id="1541" name="iMore Special Edition" />
+			<channel id="1543" name="TechCrunch Headlines" />
+			<channel id="1548" name="Build and Analyze" />
+			<channel id="1549" name="Convertcast" />
+			<channel id="1552" name="Futures in Biotech" />
+			<channel id="1553" name="Dr. Kiki's Science Hour" />
+			<channel id="1554" name="PRI's The World: Technology" />
+			<channel id="1557" name="KQED Science News" />
+		</category>
+		<category id="46" name="Science and Technology Video On Demand">
+			<channel id="1410" name="NOVA Science Video Podcast | PBS" />
+			<channel id="1420" name="Podcast for audio and video - NASA's Jet Propulsion Laboratory" />
+			<channel id="1423" name="Science Friday Audio Podcast" />
+			<channel id="1424" name="Science Friday Video Podcast" />
+			<channel id="1429" name="TERRA: The Nature of Our World" />
+			<channel id="1435" name="Hubblecast HD" />
+			<channel id="1436" name="NASA EDGE" />
+			<channel id="1438" name="NATURE | PBS" />
+			<channel id="1441" name="Science Channel Video" />
+			<channel id="1442" name="Discovery Channel Video Podcasts" />
+			<channel id="1500" name="Tech News Today Video (large)" />
+			<channel id="1505" name="Hak5 (HD MP4 - 30fps)" />
+			<channel id="1506" name="GeekBeat.TV (Small MP4)" />
+			<channel id="1507" name="GeekBeat.TV (HD MP4 - 30fps)" />
+			<channel id="1523" name="iPad Today Video (large)" />
+			<channel id="1524" name="Diggnation (Quicktime Small)" />
+			<channel id="1526" name="The Vergecast (video feed)" />
+			<channel id="1531" name="The iPad Show (video)" />
+			<channel id="1535" name="The Engadget Show" />
+			<channel id="1542" name="On The Verge" />
+			<channel id="1546" name="Lifehacker (HD MP4 - 30fps)" />
+			<channel id="1547" name="Lifehacker (Large MP4)" />
+			<channel id="1551" name="The Android App Show (video)" />
+		</category>
+		<category id="47" name="Shopping Live TV">
+			<channel id="214" name="9021go TV" />
+			<channel id="306" name="Jewelry TV" />
+			<channel id="348" name="Corner Store TV" />
+			<channel id="413" name="QVC HD" />
+			<channel id="1025" name="HSN" />
+			<channel id="1028" name="HSN2" />
+		</category>
+		<category id="48" name="Sports Live TV">
+			<channel id="79" name="Dubai Sports" />
+			<channel id="326" name="X-Treme Sports" />
+			<channel id="349" name="Pursuit channel" />
+			<channel id="373" name="NWA Wrestling" />
+			<channel id="374" name="FilmOn Football " />
+			<channel id="388" name="That's Boating TV" />
+			<channel id="389" name="Eighteen Holes TV" />
+			<channel id="391" name="Badass Sports TV" />
+			<channel id="408" name="Skiers World TV" />
+			<channel id="713" name="UFC Next" />
+			<channel id="802" name="Masked Republic AAA Lucha Libre" />
+			<channel id="980" name="AFL Classic" />
+			<channel id="1019" name="Cheer Channel" />
+		</category>
+		<category id="49" name="Sports On Demand">
+			<channel id="1090" name="The best of FUEL TV" />
+			<channel id="1093" name="FUEL TV Motocross" />
+			<channel id="1096" name="FUEL TV Skateboarding" />
+			<channel id="1120" name="HDNet Fights" />
+			<channel id="1254" name="Correr es Vivir" />
+			<channel id="1477" name="MLB Network: Intentional Talk" />
+			<channel id="1479" name="shralp! snowboarding video news" />
+			<channel id="1483" name="The Best of the UFC\u00ae" />
+			<channel id="1484" name="Freeskier Magazine Podcast" />
+			<channel id="1487" name="Element" />
+		</category>
+		<category id="50" name="Sports Radio">
+			<channel id="1147" name="ESPN Baseball Today" />
+			<channel id="1467" name="The Dan Patrick Show: Podcast" />
+			<channel id="1468" name="ESPN Radio: Best of Mike and Mike" />
+			<channel id="1469" name="ESPN: Football Today" />
+			<channel id="1472" name="5 live Football Daily" />
+			<channel id="1473" name="ESPN: The B.S. Report with Bill Simmons" />
+			<channel id="1474" name="ESPN Chicago: Waddle and Silvy" />
+			<channel id="1475" name="ESPN: PTI" />
+			<channel id="1476" name="ESPN Radio: SVP and Russillo" />
+			<channel id="1478" name="Why Today Doesn't Suck" />
+			<channel id="1481" name="Footballguys.com - The Audible - Fantasy Football Info for Serious Fans" />
+			<channel id="1488" name="The Basketball Jones Video Podcast" />
+			<channel id="1490" name="Real Sports with Bryant Gumbel" />
+			<channel id="1493" name="Running Times" />
+			<channel id="1494" name="ESPN: Fantasy Focus Baseball" />
+			<channel id="1497" name="ESPN Radio Daily" />
+		</category>
+		<category id="51" name="UK Live TV">
+			<channel id="2" name="Channel 4 " />
+			<channel id="11" name="ITV1 " />
+			<channel id="14" name="BBC One" />
+			<channel id="22" name="Channel 5" />
+			<channel id="25" name="BBC Two" />
+			<channel id="27" name="BBC News" />
+			<channel id="103" name="CBEEBIES/BBC Four" />
+			<channel id="113" name="CBBC/BBC Three" />
+			<channel id="361" name="BBC 1 North Ireland" />
+			<channel id="1663" name="BBC HD" />
+			<channel id="1666" name="BBC Parliament" />
+		</category>
+	</data>

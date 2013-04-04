@@ -1,3 +1,16 @@
+v1.8.2
+Fix - Can play some channels by getting details from other channel.
+      example: in favoritesList.txt, use: "67. ITV2. 11", ITV2 (67) getting details from ITV1 (11) channel.
+	  example: in favoritesList.xml, use: <channel id="67" name="ITV2" referrerCh="11" />
+Add - Can play direct url (the url address redirected to the player) - xml format only
+      example: in favoritesList.xml, use: 
+      <channel id="rtmp://live4.gv.edge.filmon.com:1935/live/101.high.stream" name="ITV4" referrerCh="0" iconimage="http://static.filmon.com/couch/channels/101/extra_big_logo.png" />
+      id = the direct url address, referrerCh="0" - indicate its direct url
+Add - Background image for Categories. - xml format only
+      example: in favoritesList.xml, use:
+      <category id="1" name="Entertainment" background="http://www.rovicorp.com/webdocuments/Header/rovi_entertainment_store.jpg" >
+examples of list files in "[XBMC - Home folder]\addons\plugin.video.MyFilmOn" folder.
+-------------
 v1.8.1
 New - Can update automaticaly from repository.
 -------------
