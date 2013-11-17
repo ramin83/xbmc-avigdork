@@ -60,7 +60,7 @@ def PlayChannel(chNum, referrerCh=None, ChName=None):
 		fullName = "{0} ".format(name.replace('\\',''))
 		match = re.compile('"streamName":"(.+?)"').findall(html)
 		playPath = match[0]
-		playPath = playPath.replace('\\','')
+		playPath = playPath.replace('\\','').replace('low','high')
 
 		match = re.compile('"server_time":(.*?)}').findall(html)
 		server_time = match[0]
@@ -73,6 +73,7 @@ def PlayChannel(chNum, referrerCh=None, ChName=None):
 				enddatetime = datetime.datetime.fromtimestamp(int(enddatetime)).strftime('%H:%M')
 				programmename = '{0} [{1}-{2}]'.format(programmename, startdatetime, enddatetime)
 				fullName = "[B]{0}[/B]- {1} ".format(fullName, programmename)
+				break
 				
 	else:
 		html = GetChannelHtml(referrerCh)

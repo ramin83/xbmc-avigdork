@@ -1,3 +1,6 @@
+v1.8.4
+Fix - Channels' stream update from low.stream to high.stream (filmon made changes in website)
+-------------
 v1.8.3
 Fix - new update the default.py that I forgot to update at last ver.
 -------------
