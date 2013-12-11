@@ -99,19 +99,20 @@ def PlayChannel(chNum, referrerCh=None, ChName=None):
 def PlayUrl(url, ChName, iconimage=None):
 	if (iconimage == None):
 		iconimage = "DefaultFolder.png"
-	#liz = xbmcgui.ListItem(str(ChName), iconImage = iconimage, thumbnailImage = iconimage, path=url)
-	liz = xbmcgui.ListItem(str(ChName), iconImage = iconimage, thumbnailImage = iconimage)
+	liz = xbmcgui.ListItem(str(ChName), iconImage = iconimage, thumbnailImage = iconimage, path=url)
+	#liz = xbmcgui.ListItem(str(ChName), iconImage = iconimage, thumbnailImage = iconimage)
 	liz.setInfo( type = "Video", infoLabels = { "Title": ChName } )
+	#xbmc.Player(xbmc.PLAYER_CORE_DVDPLAYER).play(url,liz)
 	liz.setProperty("IsPlayable","true")
 	
-	playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
-	playlist.clear()
-	playlist.add(url,liz)
-	if not xbmc.Player().isPlayingVideo():
-		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(playlist)
+	#playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
+	#playlist.clear()
+	#playlist.add(url,liz)
+	#if not xbmc.Player().isPlayingVideo():
+	#	xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(playlist)
 	
-	#xbmcplugin.setResolvedUrl(handle=int(sys.argv[1]), succeeded=True, listitem=liz)
-	#ok = xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url=url, listitem=liz, isFolder=False)
+	xbmcplugin.setResolvedUrl(handle=int(sys.argv[1]), succeeded=True, listitem=liz)
+	ok = xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url=url, listitem=liz, isFolder=False)
 	
 def ChannelGuide(chNum):
 	html = GetChannelHtml(chNum)
@@ -230,8 +231,8 @@ def addDir(name, url, mode, iconimage, description, playMode, isGuideMode, refer
 	if (background != None):
 		liz.setProperty('fanart_image',background)
 		
-	#if (mode == 1):
-	#	liz.setProperty('IsPlayable', 'true')
+	if (mode == 1):
+		liz.setProperty('IsPlayable', 'true')
 	if (mode == 99 or mode == 1):
 		isFolder = False
 	else:

@@ -1,3 +1,6 @@
+v1.8.6
+Fix - Playing via Navi-X.
+-------------
 v1.8.5
 Add - Suport Gotham (xbmc 13).
 -------------
