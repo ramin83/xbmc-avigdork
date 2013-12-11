@@ -2,10 +2,10 @@
 <addons>
 <addon id="plugin.video.MyFilmOn"
        name="Favorites FilmOn Channels"
-       version="1.8.4"
+       version="1.8.5"
        provider-name="Avigdor">
 	<requires>
-		<import addon="xbmc.python" version="2.0"/>
+		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>

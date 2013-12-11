@@ -12,7 +12,7 @@ remoteTxtListFile = Addon.getSetting('remoteTxtList')
 remoteXmlListFile = Addon.getSetting('remoteXmlList')
 localFolder = Addon.getSetting('localFolder')
 if (localFolder == ''):
-	localFolder = os.path.join(xbmc.translatePath('special://home/userdata'), 'addon_data', AddonID)
+	localFolder = os.path.join(xbmc.translatePath('special://home/userdata').decode("utf-8"), 'addon_data', AddonID)
 	
 def GetChannelsList(playMode, background=None):
 	if (playMode == 1):
@@ -54,7 +54,7 @@ def PlayChannel(chNum, referrerCh=None, ChName=None):
 			name = match[0]
 		except:
 			print '--------- Playing Error: there is no channel with id="{0}" ---------'.format(chNum)
-			xbmc.executebuiltin('Notification({0}, {1}, {2}, {3})'.format(AddonID, localizedString(55012).encode('utf-8'), 5000, ''))
+			xbmc.executebuiltin('Notification({0}, {1}, {2}, {3})'.format(AddonID, localizedString(55012).encode('utf-8'), 5000, os.path.join(Addon.getAddonInfo('path'), 'fail.png')))
 			return
 			
 		fullName = "{0} ".format(name.replace('\\',''))
@@ -94,17 +94,24 @@ def PlayChannel(chNum, referrerCh=None, ChName=None):
 	
 	fullUrl = "{0} app={1} playpath={2} swfUrl={3} swfVfy=true live=true".format(url, app, playPath, swfUrl)
 	
-	liz = xbmcgui.ListItem(fullName, iconImage = iconimage, thumbnailImage = iconimage)
-	liz.setInfo( type = "Video", infoLabels = { "Title": fullName } )
-
-	xbmc.Player(xbmc.PLAYER_CORE_DVDPLAYER).play(fullUrl,liz)
-
+	PlayUrl(fullUrl, fullName, iconimage)
+	
 def PlayUrl(url, ChName, iconimage=None):
 	if (iconimage == None):
 		iconimage = "DefaultFolder.png"
-	liz = xbmcgui.ListItem(str(ChName), iconImage = "DefaultFolder.png", thumbnailImage = iconimage)
+	#liz = xbmcgui.ListItem(str(ChName), iconImage = iconimage, thumbnailImage = iconimage, path=url)
+	liz = xbmcgui.ListItem(str(ChName), iconImage = iconimage, thumbnailImage = iconimage)
 	liz.setInfo( type = "Video", infoLabels = { "Title": ChName } )
-	xbmc.Player(xbmc.PLAYER_CORE_DVDPLAYER).play(url,liz)
+	liz.setProperty("IsPlayable","true")
+	
+	playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
+	playlist.clear()
+	playlist.add(url,liz)
+	if not xbmc.Player().isPlayingVideo():
+		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(playlist)
+	
+	#xbmcplugin.setResolvedUrl(handle=int(sys.argv[1]), succeeded=True, listitem=liz)
+	#ok = xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url=url, listitem=liz, isFolder=False)
 	
 def ChannelGuide(chNum):
 	html = GetChannelHtml(chNum)
@@ -114,14 +121,17 @@ def ChannelGuide(chNum):
 	try:        
 		channelName = match[0]
 	except:
-		xbmc.executebuiltin('Notification({0}, {1}, {2}, {3})'.format(AddonID, localizedString(55012).encode('utf-8'), 5000, ''))
-		return False
+		addDir('[COLOR red][B]No E.P.G for this channel.[/B][/COLOR]', '.', 99, iconimage, '', '', True)
+		return
 	
 	match = re.compile('"server_time":(.*?)}').findall(html)
 	server_time = match[0]
 	
 	match = re.compile('"startdatetime":"(.*?)","enddatetime":"(.*?)"(.+?)"programme_description":"(.*?)","programme_name":"(.*?)"').findall(html)
-
+	if len(match) == 0:
+		addDir('[COLOR red][B]No E.P.G for "{0}".[/B][/COLOR]'.format(channelName), '.', 99, iconimage, '', '', True)
+		return
+	
 	for startdatetime, enddatetime, ignore, description, programmename in match:
 		if (int(server_time) > int(enddatetime)):
 			continue
@@ -140,7 +150,6 @@ def ChannelGuide(chNum):
 			addDir(programmename, chNum, 99, iconimage, description, '', True)
 		xbmcplugin.setContent(int(sys.argv[1]), 'movies')
 		xbmc.executebuiltin("Container.SetViewMode({0})".format(Addon.getSetting('EpgStyle')))
-	return True
 		
 def GetChannelHtml(chNum):
 	url1 = 'http://www.filmon.com/tv/htmlmain'
@@ -221,7 +230,9 @@ def addDir(name, url, mode, iconimage, description, playMode, isGuideMode, refer
 	if (background != None):
 		liz.setProperty('fanart_image',background)
 		
-	if (mode == 99):
+	#if (mode == 1):
+	#	liz.setProperty('IsPlayable', 'true')
+	if (mode == 99 or mode == 1):
 		isFolder = False
 	else:
 		isFolder=True
@@ -242,7 +253,7 @@ def CopyRemoteListToLocal(ext):
 	
 	f = open(localPlaylist, 'w')
 	f.write(txt)
-	xbmc.executebuiltin('Notification({0}, {1}, {2}, {3})'.format(AddonID, localizedString(55011).encode('utf-8'), 5000, ''))
+	xbmc.executebuiltin('Notification({0}, {1}, {2}, {3})'.format(AddonID, localizedString(55011).encode('utf-8'), 5000, os.path.join(Addon.getAddonInfo('path'), 'ok.png')))
 	
 def get_params():
 	param = []
@@ -299,26 +310,21 @@ try:
 	background = urllib.unquote_plus(params["background"])
 except:
 	pass
-	
-isList = True
 
 if mode == None or url == None or len(url) < 1:
 	GetChannelsList(1, background)
 elif mode == 1:
 	PlayChannel(url, referrerCh, ChName)
-	isList = False
 elif mode == 2:
-	isList = ChannelGuide(url)
+	ChannelGuide(url)
 elif mode == 3:
 	GetChannelsList(2, background)
 elif mode == 4:
 	GetChannelsInCategoriesList(url, playMode, background)
 elif mode == 5:
 	CopyRemoteListToLocal(url)
-	isList = False
+	sys.exit()
 elif mode == 6:
 	PlayUrl(url, ChName, iconimage)
-	isList = False
 
-if isList:
-	xbmcplugin.endOfDirectory(int(sys.argv[1]))
+xbmcplugin.endOfDirectory(int(sys.argv[1]))
