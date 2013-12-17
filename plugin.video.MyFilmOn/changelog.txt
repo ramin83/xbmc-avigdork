@@ -1,3 +1,10 @@
+v1.8.7
+Fix - "now playing program" + TV-Guide for more channels.
+some changes in code.
+-------------
+v1.8.6
+Fix - Playing via Navi-X.
+-------------
 v1.8.5
 Add - Suport Gotham (xbmc 13).
 -------------

@@ -1,7 +1,9 @@
-import urllib,re,xbmcplugin,xbmcgui,datetime,os,sys,xbmcaddon,xbmc
-import requests
-import elementtree.ElementTree as ET
+import xbmc, xbmcgui, xbmcplugin, xbmcaddon
+import os, sys, datetime, re
+import urllib, urllib2, json
+import xml.etree.ElementTree as ET
 
+UA = 'Mozilla/5.0 (Windows NT 6.1; rv:11.0) Gecko/20100101 Firefox/11.0'
 iconPattern = 'http://static.filmon.com/couch/channels/<channelNum>/extra_big_logo.png'
 
 AddonID = 'plugin.video.MyFilmOn'
@@ -13,11 +15,12 @@ remoteXmlListFile = Addon.getSetting('remoteXmlList')
 localFolder = Addon.getSetting('localFolder')
 if (localFolder == ''):
 	localFolder = os.path.join(xbmc.translatePath('special://home/userdata').decode("utf-8"), 'addon_data', AddonID)
+imagesFolder = os.path.join(Addon.getAddonInfo('path').decode("utf-8"), 'resources', 'images')
 	
 def GetChannelsList(playMode, background=None):
 	if (playMode == 1):
 		icon = Addon.getAddonInfo('icon')
-		addDir('[COLOR red]--- E.P.G ---[/COLOR]','.',3,icon,'','', False)
+		addDir('[COLOR red][B][ TV-Guide ][/B][/COLOR]','.',3,icon,'','', False)
 		
 	listExt = Addon.getSetting('fileExt').lower()
 	if (listExt == 'xml'):
@@ -33,7 +36,7 @@ def GetChannelsList(playMode, background=None):
 			f = open(localPlaylist, 'r')
 			lines = f.readlines()
 		else:
-			txt = requests.get(remoteTxtListFile).text.replace('\n','')
+			txt = OpenURL(remoteTxtListFile).replace('\n','')
 			p = re.compile(r'\r')
 			lines = p.split(txt)
 		for w in lines[:]:
@@ -48,112 +51,147 @@ def GetChannelsList(playMode, background=None):
 	  			
 def PlayChannel(chNum, referrerCh=None, ChName=None):
 	if referrerCh == None:
-		html = GetChannelHtml(chNum)
-		match = re.compile('"title":"(.+?)"').findall(html)
-		try:        
-			name = match[0]
-		except:
-			print '--------- Playing Error: there is no channel with id="{0}" ---------'.format(chNum)
-			xbmc.executebuiltin('Notification({0}, {1}, {2}, {3})'.format(AddonID, localizedString(55012).encode('utf-8'), 5000, os.path.join(Addon.getAddonInfo('path'), 'fail.png')))
-			return
-			
-		fullName = "{0} ".format(name.replace('\\',''))
-		match = re.compile('"streamName":"(.+?)"').findall(html)
-		playPath = match[0]
-		playPath = playPath.replace('\\','').replace('low','high')
-
-		match = re.compile('"server_time":(.*?)}').findall(html)
-		server_time = match[0]
-	
-		match = re.compile('"startdatetime":"(.*?)","enddatetime":"(.*?)"(.+?)"programme_name":"(.*?)"').findall(html)
-
-		for startdatetime, enddatetime, ignore, programmename in match:
-			if (int(server_time) > int(startdatetime) and int(server_time) < int(enddatetime)):
-				startdatetime = datetime.datetime.fromtimestamp(int(startdatetime)).strftime('%H:%M')
-				enddatetime = datetime.datetime.fromtimestamp(int(enddatetime)).strftime('%H:%M')
-				programmename = '{0} [{1}-{2}]'.format(programmename, startdatetime, enddatetime)
-				fullName = "[B]{0}[/B]- {1} ".format(fullName, programmename)
-				break
-				
+		prms = GetChannelJson(chNum)
 	else:
-		html = GetChannelHtml(referrerCh)
-		fullName = name = "{0} ".format(ChName.replace('\\',''))
+		prms = GetChannelJson(referrerCh)
+		
+	if prms == None:
+		print '--------- Playing Error: there is no channel with id="{0}" ---------'.format(chNum)
+		xbmc.executebuiltin('Notification({0}, {1}, {2}, {3})'.format(AddonID, localizedString(55012).encode('utf-8'), 5000, os.path.join(imagesFolder, 'fail.png')))
+		return
+		
+	channelName, programmename, description, iconimage, streamUrl, startdatetime, enddatetime = GetNowPlaying(prms, chNum, referrerCh, ChName)
+	fullName = " [B]{0}[/B]".format(channelName)
+	if programmename <> "":
+		fullName = "{0} - {1}".format(fullName,  programmename)
+	if startdatetime > 0 and enddatetime > 0:
+		fullName = '{0} [{1}-{2}]'.format(fullName, datetime.datetime.fromtimestamp(startdatetime).strftime('%H:%M'), datetime.datetime.fromtimestamp(enddatetime).strftime('%H:%M'))
+
+	print '--------- Playing: ch="{0}", name="{1}" ----------'.format(chNum, channelName)
+	PlayUrl(streamUrl, fullName, iconimage)
+	
+def GetNowPlaying(prms, chNum, referrerCh=None, ChName=None):
+	iconimage = iconPattern.replace('<channelNum>',str(chNum))
+	programmename = ""
+	description = ""
+	startdatetime = 0
+	enddatetime = 0
+	
+	if referrerCh <> None:
+		channelName = ChName
 		playPath = '{0}.high.stream'.format(chNum)
+	else:
+		channelName = prms["title"]
+
+		if not prms.has_key("now_playing") or len(prms["now_playing"]) < 1:
+			if prms.has_key("description"):
+				description = prms["description"]
+		else:
+			now_playing = prms["now_playing"]
+			startdatetime = int(prms["now_playing"]["startdatetime"])
+			enddatetime = int(prms["now_playing"]["enddatetime"])
+			description = prms["now_playing"]["programme_description"]
+			programmename = prms["now_playing"]["programme_name"]
+
+		playPath = prms["streamName"].replace('low','high')
 	
-	print '--------- Playing: ch="{0}", name="{1}" ----------'.format(chNum, name)
-	
-	match = re.compile('"serverURL":"(.+?)"').findall(html)
-	url = match[0]
-	url = url.replace('\\','')
+	url = prms["serverURL"]
 
 	i = url.find('/', 7)
 	app = url[i+1:]
 
 	swfUrl = 'http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf'
-	iconimage = iconPattern.replace('<channelNum>',str(chNum))
+	streamUrl = "{0} app={1} playpath={2} swfUrl={3} swfVfy=true live=true".format(url, app, playPath, swfUrl)
 	
-	fullUrl = "{0} app={1} playpath={2} swfUrl={3} swfVfy=true live=true".format(url, app, playPath, swfUrl)
-	
-	PlayUrl(fullUrl, fullName, iconimage)
-	
+	return channelName, programmename, description, iconimage, streamUrl, startdatetime, enddatetime
+
 def PlayUrl(url, ChName, iconimage=None):
 	if (iconimage == None):
 		iconimage = "DefaultFolder.png"
-	#liz = xbmcgui.ListItem(str(ChName), iconImage = iconimage, thumbnailImage = iconimage, path=url)
-	liz = xbmcgui.ListItem(str(ChName), iconImage = iconimage, thumbnailImage = iconimage)
+	liz = xbmcgui.ListItem(str(ChName), iconImage = iconimage, thumbnailImage = iconimage, path=url)
 	liz.setInfo( type = "Video", infoLabels = { "Title": ChName } )
 	liz.setProperty("IsPlayable","true")
+	xbmcplugin.setResolvedUrl(handle=int(sys.argv[1]), succeeded=True, listitem=liz)
+	xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url=url, listitem=liz, isFolder=True)
 	
-	playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
-	playlist.clear()
-	playlist.add(url,liz)
-	if not xbmc.Player().isPlayingVideo():
-		xbmc.Player(xbmc.PLAYER_CORE_MPLAYER).play(playlist)
-	
-	#xbmcplugin.setResolvedUrl(handle=int(sys.argv[1]), succeeded=True, listitem=liz)
-	#ok = xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url=url, listitem=liz, isFolder=False)
-	
-def ChannelGuide(chNum):
-	html = GetChannelHtml(chNum)
-	iconimage = iconPattern.replace('<channelNum>',str(chNum))
-
-	match=re.compile('"title":"(.+?)"').findall(html)
-	try:        
-		channelName = match[0]
-	except:
-		addDir('[COLOR red][B]No E.P.G for this channel.[/B][/COLOR]', '.', 99, iconimage, '', '', True)
-		return
-	
-	match = re.compile('"server_time":(.*?)}').findall(html)
-	server_time = match[0]
-	
-	match = re.compile('"startdatetime":"(.*?)","enddatetime":"(.*?)"(.+?)"programme_description":"(.*?)","programme_name":"(.*?)"').findall(html)
-	if len(match) == 0:
-		addDir('[COLOR red][B]No E.P.G for "{0}".[/B][/COLOR]'.format(channelName), '.', 99, iconimage, '', '', True)
-		return
-	
-	for startdatetime, enddatetime, ignore, description, programmename in match:
-		if (int(server_time) > int(enddatetime)):
-			continue
-		isNow = False
-		if (int(server_time) > int(startdatetime) and int(server_time) < int(enddatetime)):
-			isNow = True
-		description=str(description).replace('"','').replace('\n','')
-		startdatetime=datetime.datetime.fromtimestamp(int(startdatetime)).strftime('%d/%m %H:%M')
-		enddatetime=datetime.datetime.fromtimestamp(int(enddatetime)).strftime('%H:%M')
-		programmename='[{0}-{1}] {2}'.format(startdatetime,enddatetime,programmename)
-		if isNow:
-			programmename = "[COLOR red]{0}[/COLOR]".format(programmename)
-			addDir(programmename, chNum, 1, iconimage, description, '', True)
-			addDir('------- Next on [B]{0}[/B]: -------'.format(channelName), '.', 99, iconimage, '', '', True)
-		else:
-			addDir(programmename, chNum, 99, iconimage, description, '', True)
-		xbmcplugin.setContent(int(sys.argv[1]), 'movies')
-		xbmc.executebuiltin("Container.SetViewMode({0})".format(Addon.getSetting('EpgStyle')))
+def ChannelGuide(chNum, referrerCh=None, ChName=None):
+	if referrerCh == None:
+		prms = GetChannelJson(chNum)
+	else:
+		prms = GetChannelJson(referrerCh)
 		
+	if prms == None:
+		addDir('[COLOR red][B]No TV-Guide for this channel.[/B][/COLOR]', '.', 99, '', '', '', True)
+		return
+	
+	channelName, programmename, description, iconimage, streamUrl, startdatetime, enddatetime = GetNowPlaying(prms, chNum, referrerCh, ChName)
+	
+	if programmename == "":
+		programmename = channelName
+	if startdatetime > 0 and enddatetime > 0:
+		programmename = '[{0}-{1}] [COLOR red][B]{2}[/B][/COLOR]'.format(datetime.datetime.fromtimestamp(startdatetime).strftime('%H:%M'), datetime.datetime.fromtimestamp(enddatetime).strftime('%H:%M'), programmename)
+		
+	addDir(programmename, chNum, 1, iconimage, description, '', True, referrerCh, ChName)
+
+	if not prms.has_key("tvguide") or len(prms["tvguide"]) < 1 or referrerCh <> None:
+		addDir('[COLOR red][B]No TV-Guide for "{0}".[/B][/COLOR]'.format(channelName), '.', 99, iconimage, '', '', True)
+	else:
+		addDir('------- Next on [B]{0}[/B]: -------'.format(channelName), '.', 99, iconimage, '', '', True)
+		tvguide = prms["tvguide"]
+		server_time = int(prms["server_time"])
+
+		for prm in tvguide:
+			startdatetime = int(prm["startdatetime"])
+			enddatetime = int(prm["enddatetime"])
+			if server_time > startdatetime:
+				continue
+			description=prm["programme_description"]
+			startdatetime=datetime.datetime.fromtimestamp(startdatetime).strftime('%d/%m %H:%M')
+			enddatetime=datetime.datetime.fromtimestamp(enddatetime).strftime('%H:%M')
+			programmename='[{0}-{1}] [B]{2}[/B]'.format(startdatetime,enddatetime,prm["programme_name"])
+			addDir(programmename, chNum, 99, iconimage, description, '', True)
+		
+	xbmcplugin.setContent(int(sys.argv[1]), 'movies')
+	xbmc.executebuiltin("Container.SetViewMode({0})".format(Addon.getSetting('EpgStyle')))
+	
+def OpenURL(url, headers={}, user_data={}, justCookie=False):
+	if user_data:
+		user_data = urllib.urlencode(user_data)
+		req = urllib2.Request(url, user_data)
+	else:
+		req = urllib2.Request(url)
+	
+	req.add_header('User-Agent', UA)
+	for k, v in headers.items():
+		req.add_header(k, v)
+	
+	response = urllib2.urlopen(req)
+	link = response.read()
+	response.close()
+
+	if justCookie == True:
+		if response.info().has_key("Set-Cookie"):
+			return response.info()['Set-Cookie']
+		return None
+	
+	return link
+	
 def GetChannelHtml(chNum):
 	url1 = 'http://www.filmon.com/tv/htmlmain'
 	url2 = 'http://www.filmon.com/ajax/getChannelInfo'
+
+	cookie = OpenURL(url1, justCookie=True)
+
+	headers = {'X-Requested-With': 'XMLHttpRequest', 'Connection': 'Keep-Alive', 'Cookie': cookie}
+	user_data = {'channel_id': chNum}
+	
+	response = OpenURL(url2, headers, user_data)
+
+	return response
+	'''
+	url1 = 'http://www.filmon.com/tv/htmlmain'
+	url2 = 'http://www.filmon.com/ajax/getChannelInfo'
+	
 	user_data = {'channel_id': chNum}
 	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:11.0) Gecko/20100101 Firefox/11.0', 'X-Requested-With': 'XMLHttpRequest', 'Connection': 'Keep-Alive'}
 
@@ -162,6 +200,14 @@ def GetChannelHtml(chNum):
 		response = s.post(url2, data = user_data, headers = headers)
 
 	return response.text
+	'''
+	
+def GetChannelJson(chNum):
+	html = GetChannelHtml(chNum)
+	resultJSON = json.loads(html)
+	if len(resultJSON) < 1 or not resultJSON[0].has_key("title"):
+		return None
+	return resultJSON[0]
 		
 def GetChannelsInCategoriesList(categoryID, playMode, background=None):
 	background1 = None 
@@ -198,7 +244,7 @@ def getXmlList():
 	if (isLocalList and os.path.isfile(localPlaylist)):
 		tree = ET.parse(localPlaylist)
 	else:
-		tree = ET.fromstring(requests.get(remoteXmlListFile).text.replace('\n',''))
+		tree = ET.fromstring(OpenURL(remoteXmlListFile).replace('\n',''))
 	return tree
 
 def addDir(name, url, mode, iconimage, description, playMode, isGuideMode, referrerCh=None, background=None):
@@ -230,8 +276,8 @@ def addDir(name, url, mode, iconimage, description, playMode, isGuideMode, refer
 	if (background != None):
 		liz.setProperty('fanart_image',background)
 		
-	#if (mode == 1):
-	#	liz.setProperty('IsPlayable', 'true')
+	if (mode == 1):
+		liz.setProperty('IsPlayable', 'true')
 	if (mode == 99 or mode == 1):
 		isFolder = False
 	else:
@@ -246,14 +292,14 @@ def addChannel(channelNum, channelName, playMode, referrerCh=None, background=No
 def CopyRemoteListToLocal(ext):
 	if (ext == 'copyXML'):
 		localPlaylist = os.path.join(localFolder, 'favoritesList.xml')
-		txt = requests.get(remoteXmlListFile).text.replace('\n','')
+		txt = OpenURL(remoteXmlListFile).replace('\n','')
 	else: #(ext == 'copyTXT'):
 		localPlaylist = os.path.join(localFolder, 'favoritesList.txt')
-		txt = requests.get(remoteTxtListFile).text.replace('\r','')
+		txt = OpenURL(remoteTxtListFile).replace('\r','')
 	
 	f = open(localPlaylist, 'w')
 	f.write(txt)
-	xbmc.executebuiltin('Notification({0}, {1}, {2}, {3})'.format(AddonID, localizedString(55011).encode('utf-8'), 5000, os.path.join(Addon.getAddonInfo('path'), 'ok.png')))
+	xbmc.executebuiltin('Notification({0}, {1}, {2}, {3})'.format(AddonID, localizedString(55011).encode('utf-8'), 5000, os.path.join(imagesFolder, 'ok.png')))
 	
 def get_params():
 	param = []
@@ -316,7 +362,7 @@ if mode == None or url == None or len(url) < 1:
 elif mode == 1:
 	PlayChannel(url, referrerCh, ChName)
 elif mode == 2:
-	ChannelGuide(url)
+	ChannelGuide(url, referrerCh, ChName)
 elif mode == 3:
 	GetChannelsList(2, background)
 elif mode == 4:

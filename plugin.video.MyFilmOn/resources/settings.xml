@@ -16,6 +16,6 @@
 		<setting type="sep"/>
 		<setting id="categories" type="bool" label="55004" default="true" />
 		<setting type="sep"/>
-		<setting id="EpgStyle" type="labelenum" label="55006" values="503|504" default="503" />
+		<setting id="EpgStyle" type="labelenum" label="55006" values="503|504|515" default="503" />
 	</category>
 </settings>
