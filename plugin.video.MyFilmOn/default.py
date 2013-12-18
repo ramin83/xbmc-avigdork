@@ -1,8 +1,14 @@
 import xbmc, xbmcgui, xbmcplugin, xbmcaddon
 import os, sys, datetime, re
-import urllib, urllib2, json
+import urllib, urllib2
 import xml.etree.ElementTree as ET
 
+isOldPy = False if sys.version_info >=  (2, 7) else True
+if isOldPy:
+    import simplejson as _json
+else:
+	import json as _json
+	
 UA = 'Mozilla/5.0 (Windows NT 6.1; rv:11.0) Gecko/20100101 Firefox/11.0'
 iconPattern = 'http://static.filmon.com/couch/channels/<channelNum>/extra_big_logo.png'
 
@@ -204,7 +210,7 @@ def GetChannelHtml(chNum):
 	
 def GetChannelJson(chNum):
 	html = GetChannelHtml(chNum)
-	resultJSON = json.loads(html)
+	resultJSON = _json.loads(html)
 	if len(resultJSON) < 1 or not resultJSON[0].has_key("title"):
 		return None
 	return resultJSON[0]
@@ -218,13 +224,16 @@ def GetChannelsInCategoriesList(categoryID, playMode, background=None):
 	condition = ''
 	
 	if (categoryID == ''):
-		condition = './/channel'
+		list1 = tree.findall('.//channel')
 	elif (categoryID == 'root'):
-		condition = '*'
+		list1 = tree.findall('*')
 	else:
-		condition = ".//category[@id='{0}']/*".format(categoryID)
+		for elem in tree.findall(".//category"):
+			if elem.attrib.get('id') == categoryID:
+				list1 = elem.getchildren() if isOldPy else list(elem)
+				break
 		
-	for elem in tree.findall(condition):
+	for elem in list1:
 		elemID = elem.get('id')
 		elemName = elem.get('name')
 		if (elem.tag == 'channel'):

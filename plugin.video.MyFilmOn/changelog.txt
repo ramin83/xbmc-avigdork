@@ -1,3 +1,6 @@
+v1.8.8
+Fix - Support both old and new versions of python.
+-------------
 v1.8.7
 Fix - "now playing program" + TV-Guide for more channels.
 some changes in code.
@@ -6,7 +9,7 @@ v1.8.6
 Fix - Playing via Navi-X.
 -------------
 v1.8.5
-Add - Suport Gotham (xbmc 13).
+Add - Support Gotham (xbmc 13).
 -------------
 v1.8.4
 Fix - Channels' stream update from low.stream to high.stream (filmon made changes in website)
