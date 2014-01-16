@@ -78,6 +78,10 @@ def PlayChannel(chNum, referrerCh=None, ChName=None):
 	
 def GetNowPlaying(prms, chNum, referrerCh=None, ChName=None):
 	iconimage = iconPattern.replace('<channelNum>',str(chNum))
+	#swfUrl = 'http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf'
+	url = prms["serverURL"]
+	i = url.find('/', 7)
+	app = url[i+1:]
 	programmename = ""
 	description = ""
 	startdatetime = 0
@@ -88,27 +92,38 @@ def GetNowPlaying(prms, chNum, referrerCh=None, ChName=None):
 		playPath = '{0}.high.stream'.format(chNum)
 	else:
 		channelName = prms["title"]
-
+		playPath = prms["streamName"].replace('low','high')
+		
 		if not prms.has_key("now_playing") or len(prms["now_playing"]) < 1:
 			if prms.has_key("description"):
 				description = prms["description"]
 		else:
+			server_time = int(prms["server_time"])
 			now_playing = prms["now_playing"]
-			startdatetime = int(prms["now_playing"]["startdatetime"])
-			enddatetime = int(prms["now_playing"]["enddatetime"])
-			description = prms["now_playing"]["programme_description"]
-			programmename = prms["now_playing"]["programme_name"]
+			startdatetime = int(now_playing["startdatetime"])
+			enddatetime = int(now_playing["enddatetime"])
+			
+			if startdatetime < server_time and server_time < enddatetime:
+				description = now_playing["programme_description"]
+				programmename = now_playing["programme_name"]
+			else:
+				startdatetime = 0
+				enddatetime = 0
+				if prms.has_key("tvguide") and len(prms["tvguide"]) > 1:
+					tvguide = prms["tvguide"]
+					isNowPlaying = False
+					for prm in tvguide:
+						start_time = int(prm["startdatetime"])
+						end_time = int(prm["enddatetime"])
+						if start_time < server_time and server_time < end_time:
+							description = prm["programme_description"]
+							programmename = prm["programme_name"]
+							startdatetime = start_time
+							enddatetime = end_time
+							break
 
-		playPath = prms["streamName"].replace('low','high')
-	
-	url = prms["serverURL"]
-
-	i = url.find('/', 7)
-	app = url[i+1:]
-
-	swfUrl = 'http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf'
-	streamUrl = "{0} app={1} playpath={2} swfUrl={3} swfVfy=true live=true".format(url, app, playPath, swfUrl)
-	
+	#streamUrl = "{0} app={1} playpath={2} swfUrl={3} swfVfy=true live=true".format(url, app, playPath, swfUrl)
+	streamUrl = "{0} app={1} playpath={2} live=true".format(url, app, playPath)
 	return channelName, programmename, description, iconimage, streamUrl, startdatetime, enddatetime
 
 def PlayUrl(url, ChName, iconimage=None):
@@ -192,21 +207,7 @@ def GetChannelHtml(chNum):
 	user_data = {'channel_id': chNum}
 	
 	response = OpenURL(url2, headers, user_data)
-
 	return response
-	'''
-	url1 = 'http://www.filmon.com/tv/htmlmain'
-	url2 = 'http://www.filmon.com/ajax/getChannelInfo'
-	
-	user_data = {'channel_id': chNum}
-	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:11.0) Gecko/20100101 Firefox/11.0', 'X-Requested-With': 'XMLHttpRequest', 'Connection': 'Keep-Alive'}
-
-	with requests.session() as s:
-		s.get(url1)
-		response = s.post(url2, data = user_data, headers = headers)
-
-	return response.text
-	'''
 	
 def GetChannelJson(chNum):
 	html = GetChannelHtml(chNum)
