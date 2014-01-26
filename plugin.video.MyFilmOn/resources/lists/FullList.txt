@@ -1,10 +1,9 @@
-2. Channel 4
+2. Channel 4 
 4. Al Jazeera
-5. CBS Miami
 7. FilmOn Kids
 8. Viva
 10. FilmOn Martial Arts
-11. ITV1
+11. ITV1 
 13. Film 4
 14. BBC One
 20. Food Network
@@ -24,23 +23,23 @@
 101. ITV4
 103. CBEEBIES/BBC Four
 113. CBBC/BBC Three
-124. WABC 7 NY
+115. CNN International
+124. ABC 7 NY (WABC)
 131. KPBS 15 San Diego
-136. WNYW 5 NY
-153. KPXN 30.2 Los Angeles
-154. WNBC 4 NY
+136. FOX 5 NY (WNYW)
+153. Qubo Los Angeles (KPXN 30.2)
+154. NBC 4 NY (WNBC)
 181. KTLA 5 Los Angeles
 190. Test
 191. BattleCam TV
-196. WCBS 2 NY
+196. CBS 2 NY (WCBS)
 200. KDOC 56.1 Los Angeles
 206. FilmOn Classics
-209. WPIX 11 NY
+209. CW NY (WPIX 11.1)
 212. CORNERSTONE TV
 213. TVC Latino
 214. 9021go TV
-216. TUFF
-233. World
+233. PBS SoCal World (KOCE 50.4)
 239. UNRELIABLE SOURCES
 256. RSquared
 257. FilmOn Music Legends TV
@@ -49,7 +48,6 @@
 263. Wine Channel TV
 265. The Ski Channel
 289. The Spirit Word Channel
-290. Mini Movies
 295. My Combat Channel
 298. France24
 299. RT Espanol
@@ -66,7 +64,6 @@
 315. Macabre Theatre
 324. Battlecam People
 326. X-Treme Sports
-329. WeatherNation
 330. NASA HD
 332. Jewish Life TV
 333. The Pentagon
@@ -85,7 +82,7 @@
 349. Pursuit channel
 350. The Soundtrack Channel
 354. QVC Deutschland
-355. QVC PLUS
+355. QVC PLUS Deutsch
 359. zdf.kultur
 360. ZDFneo
 361. BBC 1 North Ireland
@@ -99,41 +96,30 @@
 371. Pick TV
 372. Really
 373. NWA Wrestling
-374. FilmOn Football
-375. Rai 1
-376. Rai 2
--377. Rai 3
-378. Rai News 24
+374. FilmOn Football 
 379. Camera dei Deputati
 380. Bikini TeeVee
--381. Documentary War and Crime Network
+381. WW2 TeeVee
 382. Sci-Fi Telly
 383. Veg TV
 384. The Western Channel
 385. The Noise Network
 386. GeoBeats Travel
 387. Kevin Spencer TV
--388. That's Boating TV
--389. Eighteen Holes TV
 390. Linkct Network
--391. Badass Sports TV
-392. WNET 13.1 NY
+392. THIRTEEN NY (WNET 13.1)
 393. American Horrors
 394. WW Extreme
-395. FilmOn Reels
+395. Films On Reels
 396. Men7
 397. Wheels TV
 398. TBN
 399. The Church Channel
 400. JCTV
-401. Smile of Child
-402. RandR Television 
-403. Wealth TV
--405. Parables TV
+401. Smile of a Child
+402. RandR Television
+403. AWE
 406. World of Martial Arts Television
--407. FilmOn at the Improv
--408. Skiers World TV
--410. FITNESS LIFESTYLE TV
 411. Hollywoodland Channel
 412. PPV Celebrity Fight
 413. QVC HD
@@ -142,88 +128,75 @@
 418. Eins Plus
 421. Eins Festival
 424. Phoenix
--427. ITALIA 1
--430. Rete 4
--433. CANALE 5
--436. Untamed Sports
 442. Canale Italia 84
-445. Canale Italia
--448. BLU
+445. Italia Channel
 451. Studio Europa
 454. Justice TV
 460. Janice TV
 463. QVC Italia
--464. MHz Worldview
--485. FilmOn College Basketball
--488. FilmOn College Football
--491. War in Color
 494. Filmon Stars
-497. Urban Comedy
+497. Urban Comedy 
 500. Action Cinema
-503. Inspirational films
--509. ShockORama
+503. Inspirational Films
 514. Threshold 
 517. TV5MONDE EUROPE
--520. ProSieben Austria
 526. Andalucia TV
--529. TELEMADRID
 530. FilmOn Jazz and Blues
-536. GALAXIE ADULT ALTERNATIVE
-539. GALAXIE CLASSIC MASTERS
-542. GALAXIE CLASSIC ROCK
-545. GALAXIE COUNTRY CLASSICS
-548. GALAXIE EASY LISTENING
-551. GALAXIE FLASHBACK 70S
-554. GALAXIE FOLK ROOTS
-557. GALAXIE HIT LIST
-560. GALAXIE HOT COUNTRY
-563. GALAXIE JAMMIN
-566. GALAXIE JAZZ MASTERS
-569. GALAXIE JUKEBOX OLDIES
-572. GALAXIE KIDS STUFF
-575. GALAXIE LATINO TROPICAL
-578. GALAXIE POP ADULT
-581. GALAXIE POP CLASSICS
-584. GALAXIE EVERYTHING 80S
-587. GALAXIE ROCK
-590. GALAXIE ROCK ALTERNATIVE
-593. GALAXIE SMOOTH JAZZ
-596. GALAXIE SOUL STORM
-599. GALAXIE STANDARDS
-602. GALAXIE THE BLUES
-605. GALAXIE THE LIGHT
-608. GALAXIE URBAN BEATS
-611. GALAXIE NOTHIN' BUT 90'S
-614. GALAXIE MAXIMUM PARTY
-617. GALAXIE DANCE CLUBBN'
-620. GALAXIE BLUEGRASS
-623. GALAXIE BIG BAND
-626. GALAXIE JAZZ NOW
-629. GALAXIE THE CHILL LOUNGE
-632. GALAXIE THE SPA
-635. GALAXIE BAROQUE
-638. GALAXIE OPERA PLUS
-641. GALAXIE CHAMBER MUSIC
-644. GALAXIE TODAY'S LATIN POP
-647. Galaxie Music GALAXIE RETRO R and B 
-650. GALAXIE NO FENCES
-653. GALAXIE DANCE CLASSICS
-656. GALAXIE HOLIDAY HITS
-659. GALAXIE HARD ROCK
-662. GALAXIE ALT ROCK CLASSICS
-665. GALAXIE ROCK ALT-COUNTRY AMERICANA
-668. GALAXIE GOSPEL
-671. GALAXIE CELTIC
-674. GALAXIE RETRO LATINO
-677. GALAXIE LATINO URBANA
-680. GALAXIE LATINO TEJANO
-683. GALAXIE REGIONAL MEXICAN
+536. ADULT ALTERNATIVE
+539. CLASSIC MASTERS
+542. CLASSIC ROCK
+545. COUNTRY CLASSICS
+548. EASY LISTENING
+551. FLASHBACK 70S
+554. FOLK ROOTS
+557. HIT LIST
+560. HOT COUNTRY
+563. JAMMIN
+566. JAZZ MASTERS
+569. JUKEBOX OLDIES
+572. KIDS' STUFF
+575. LATINO TROPICAL
+578. POP ADULT
+581. POP CLASSICS
+584. EVERYTHING 80S
+587. ROCK
+590. ROCK ALTERNATIVE
+593. SMOOTH JAZZ
+596. SOUL STORM
+599. SWINGING STANDARDS
+602. THE BLUES
+605. THE LIGHT
+608. URBAN BEATS
+611. NOTHIN' BUT 90'S
+614. MAXIMUM PARTY
+617. DANCE CLUBBN'
+620. BLUEGRASS
+623. BIG BAND
+626. JAZZ NOW
+629. THE CHILL LOUNGE
+632. THE SPA
+635. BAROQUE
+638. OPERA PLUS
+641. CHAMBER MUSIC
+644. TODAY'S LATIN POP
+647. RETRO RandB
+650. NO FENCES
+653. DANCE CLASSICS
+656. HOLIDAY HITS
+659. HARD ROCK
+662. ALT ROCK CLASSICS
+665. ALT-COUNTRY AMERICANA
+668. GOSPEL
+671. CELTIC
+674. RETRO LATINO
+677. LATINO URBANA
+680. LATINO TEJANO
+683. REGIONAL MEXICAN
 686. Sportskool
-689. BattleCam
+689. FilmOn TV Live
 691. Clubbing TV
 694. HRTV
 697. Free Speech TV
--700. INSP
 703. Pivot TV
 706. Sonnenklar TV
 707. American Primetime Television
@@ -237,8 +210,7 @@
 758. Kato
 761. Situation
 764. Rampage
-767. Andy Dick
--770. PopStop TV
+767. Andy Dick 
 773. YouToo
 779. MyFamily TV East
 782. BUZZ TV
@@ -249,64 +221,37 @@
 796. Ginx
 799. Animal Atlas
 802. Masked Republic AAA Lucha Libre
-805. The war channel
+805. The War Channel
 808. UWTV
 812. Trans TV
 813. Trans 7
-815. ERT World
-821. WWOR 9.3 NY
--827. WNJU NY
+821. Bounce TV NY (WWOR 9.3)
 833. DAYSTAR
-836. horror channel
+836. Horror Channel
 842. Travel Channel+1
 845. 5USA
--848. 5USA+1
--851. 5*
--854. 5*+1
--857. Channel5+1
--860. CNBC
-863. WNET Kids 13.2 NY
+863. Kids THIRTEEN 13.2 NY
 866. MiamiTV
 869. PBS CH
-872. WGN 9 Chicago
-875. CBS CH
-878. NBC CH
-881. Fox CH
-884. ABC CH
--896. ME TV Chicago
 899. Zolar Live
 905. Press TV
 908. iFilm
 911. Eye for an Eye
-914. Ebru 
+914. Ebru
 932. Arirang TV
-934. Fox Dallas
-937. NBC Dallas
-940. ABC Dallas
-943. CBS Dallas
 950. 247Clubber
 979. Ebru TV US
 980. AFL Classic
-983. Punch TV
-986. NBC Miami
-989. ABC Miami
-992. Fox Miami
-997. NBC Washington
-998. ABC Washington
 1001. WTTG 5 Washington
-1004. CBS Washington
 1007. ABC Australia
 1013. Supa Pirate Booty Hunt
 1016. World of...
 1019. Cheer Channel
 1022. Simply Me
--1025. HSN
--1028. HSN2
--1030. VOX
+1033. n-tv
 1039. Yesterday
 1042. Vintage Music TV
 1045. Action Zone
-1046. RMC On Air
 1049. OBXTV
 1052. Matriarch TV
 1054. NBC Nightly News
@@ -318,34 +263,26 @@
 1072. The Ellen Show
 1075. Chelsea Lately Video Podcast
 1078. The Soup Video Podcast
--1081. Showbiz Tonight
--1084. Live from the Red Carpet
 1087. Sky News - Spotlight Entertainment
 1090. The best of FUEL TV
 1093. FUEL TV Motocross
--1096. FUEL TV Skateboarding
 1099. College Humor
-1102. Kevin Pollak
--1105. Onion News Network
+1102. Kevin Pollak's Chat Show
 1108. The Ricky Gervais Podcast
 1111. The New Yorker Animated Cartoons
 1114. Dilbert Animated Cartoons
 1117. Old Jews Telling Jokes
--1120. HDNet Fights
 1123. Fitness TV
--1126. Put this on
 1129. Fashion network
--1132. Chanel Fashion
 1135. CHIC.TV Fashion
--1138. Global Fashion News
--1141. WORMLAND Men
+1138. Global Fashion News
 1144. MODTV FASHION
 1147. ESPN Baseball Today
 1150. NPR: Hourly News Summary Podcast
 1155. Wall Street Journal What's News
 1156. APM: Marketplace Tech Report
 1157. Wall Street Journal's Your Money Matters
-1160. MAD MONEY w/ JIM CRAMER - Full Episode
+1160. MAD MONEY W/ JIM CRAMER - Full Episode
 1162. Wall Street Journal This Morning
 1163. Money Girl's Quick and Dirty Tips for a Richer Life
 1164. This Week in Startups - Audio
@@ -358,22 +295,17 @@
 1171. CNBC's "The Suze Orman Show"
 1172. WealthTrack
 1173. CNBC's "Options Action"
--1174. Red, White and Blue Chips
--1175. BusinessWeek -- Behind This Week's Cover Story
 1176. SPEED X Extreme Action Clips
 1177. SPEED Engine Block
 1179. Radio Le Mans
 1180. NPR: Car Talk Podcast
 1181. Barrett-Jackson Collector Car Auction Highlight Clips
--1183. K and N Videos
--1184. GERMAN CARS. 29MOTOGUIDE.
--1185. FAST SPORTS CARS. SPORTS CAR27.
--1186. The Dennis Miller Show
+1186. The Dennis Miller Show
 1187. Heidi and Frank Whole Show
 1189. WTF with Marc Maron Podcast
 1190. The Adam Carolla Show
 1193. Distorted View Daily
-1194. The Mike OMeara Show
+1194. The Mike O'Meara Show
 1195. Pod Is My Copilot
 1196. Stop Podcasting Yourself
 1197. Comedy Bang Bang: The Podcast
@@ -395,9 +327,8 @@
 1215. The Splendid Table
 1216. GrateTV
 1217. PCC Natural Markets Videos
-1218. GrapeRadio 2013 Wine Talk Show
+1218. GrapeRadio – Wine Talk Show
 1219. Start Cooking
--1220. NYT's The Minimalist (Video)
 1221. TEDTalks (video)
 1222. APM: Garrison Keillor's The Writer's Almanac Podcast feed
 1223. History According to Bob
@@ -405,7 +336,6 @@
 1225. Freakonomics Radio
 1226. Stuff You Missed in History Class
 1227. Photoshop User TV
--1228. Dan Carlin's Hardcore History
 1229. Modern Manners Guy Quick and Dirty Tips for a More Polite Life
 1230. Legal Lad's Quick and Dirty Tips for a More Lawful Life
 1232. My History Can Beat Up Your Politics
@@ -415,7 +345,7 @@
 1237. APM: American RadioWorks
 1238. Adobe Creative Suite Video Podcast
 1239. NPR: Intelligence Squared Podcast
-1240. tranquility du jour
+1240. Tranquility du jour
 1245. The Nutrition Diva's Quick and Dirty Tips for Eating Well and Feeling Fabulous
 1248. The Jillian Michaels Show
 1254. Correr es Vivir
@@ -425,16 +355,12 @@
 1258. The Fat-Burning Man Show 
 1259. Namaste Yoga with Dr Melissa West
 1262. Pilates Podcasts from Balanced Body
-1265. Yoga and other useful stuff with Tara Stiles
+1265. Yoga & other useful stuff with Tara Stiles
 1266. Fit Life
 1267. Thrive Personal Fitness
--1269. 20 min. Yoga Sessions from YogaDownload.com
 1270. John McConnell Yoga
-1271. fit and gesund | Video Podcast | Deutsche Welle
+1271. Fit & gesund | Video Podcast | Deutsche Welle
 1272. Sean vigue fitness
--1274. Huggacasts (Bike Hugger Podcasts)
--1276. Pilates, Yoga, Total Body, Meditation
--1279. The Fitness Guru
 1281. The WDW Radio Show - Your Walt Disney World Information Station
 1282. Storynory - Stories For Kids
 1283. Inside the Magic - Your source for Disney news and all theme park fun!
@@ -443,10 +369,6 @@
 1287. The Official Adventures in Odyssey Podcast
 1288. Big Cat Rescue
 1289. The MuppetCast
--1291. iCarly
--1293. How To Rock
--1297. Nanovor: The Animated Series
--1298. The Legend of Korra
 1299. Learn Japanese | JapanesePod101.com (Audio)
 1300. LearnItalianPod.com - Learn to Speak Italian with Podcasts
 1301. Learn German | GermanPod101.com
@@ -454,14 +376,11 @@
 1303. ArabicPod - Learn Arabic
 1304. Coffee Break Spanish
 1305. Mandarin Chinese Lessons with Serge Melnyk
--1306. Learn Hindi from Bollywood Movies. India style.
 1307. Coffee Break French
--1308. Learn Spanish - Survival Guide
 1309. BBC Music Magazine
 1310. NPR: Tiny Desk Concerts Podcast
 1311. NPR: Live In Concert from NPR's All Songs Considered Podcast
 1312. KCRW's Today's Top Tune
--1314. CD Baby Music Discovery Podcast and Blog
 1315. remix.nin.com - Newest Mixes
 1316. Coverville
 1317. KEXP Song of the Day
@@ -469,17 +388,16 @@
 1320. Q: The Podcast from CBC Radio
 1321. KEXP Live Performances Podcast
 1323. Classical Performance Podcast
-1325. Sound and Vision Radio
+1325. Sound & Vision Radio
 1327. Perfecto Podcast: featuring Paul Oakenfold
 1328. AMPed New Music Weekly
 1329. In the Groove, Jazz and Beyond
 1330. KEXP Presents Mind Over Matters Sustainability Segment
 1331. Endless Boundaries
 1332. Sound Opinions
-1333. Indie Disco
 1334. Bluegrass Highway
-1336. Irish and Celtic Music Podcast
-1337. Above and Beyond: Group Therapy
+1336. Irish & Celtic Music Podcast
+1337. Above & Beyond: Group Therapy
 1339. Scotland Introducing
 1340. The Deadpod
 1341. Music Popcast
@@ -487,27 +405,14 @@
 1343. The Watt From Pedro Show
 1345. House of Reggae
 1346. Song of the Day
--1347. Hype Machine Radio Show
 1348. Raven and Blues
 1349. Canada Live from CBC Radio 2
 1350. WNYC's Radiolab
--1351. Radio Africa Online Mixes
 1353. This Week in Music - Video
 1355. NPR: World Cafe Words and Music from WXPN Podcast
-1356. La selection de Bande e part, sans chapitres
--1357. The FADER bb PODCASTS
+1356. La sélection de Bande à part, sans chapitres
 1358. Sphere of Hip-Hop Podcast
--1359. The Alternate Side Staff Pick
--1360. The Dub Zone
--1363. This Ordinary Guy
--1365. Acoustic Long Island
--1366. Mark Rushton's Ambient and Electronic Music Podcast
 1367. WBEZ's Live Music Thursday
--1368. DIY Musician Podcast
--1369. Reign Radio
--1370. FadeEm Mixtape Series(Free HipHop-Reggae-Dancehall-Soca-Reggaeton Mixes)
--1372. FVF RECORDS
--1373. First Take
 1374. The Alex Jones Show - Infowars.com
 1375. Global News
 1376. NPR: Shuffle Podcast
@@ -530,7 +435,6 @@
 1395. Washington Week Video Podcast | PBS
 1396. FRONTLINE: Audiocast | PBS
 1397. WeatherBrains
--1399. State of the Union (video)
 1400. PediaCast
 1401. The Mighty Mommy's Quick and Dirty Tips for Practical Parenting
 1402. Manic Mommies
@@ -554,17 +458,11 @@
 1424. Science Friday Video Podcast
 1425. Quirks and Quarks Complete Show from CBC Radio
 1426. NPR Topics: Environment Podcast
--1427. All In The Mind - Program podcast
 1429. TERRA: The Nature of Our World
 1430. - The Naked Scientists Podcast - Stripping Down Science
 1433. Brain Science Podcast
 1434. QuackCast
--1435. Hubblecast HD
 1436. NASA EDGE
--1438. NATURE | PBS
--1439. Discovery News Audio Podcast
--1441. Science Channel Video
--1442. Discovery Channel Video Podcasts
 1447. Ask Anything - From E! - Audio Podcast
 1449. Widescreen Warrior.com - Weekly Blend Audio Show
 1451. In Our Time With Melvyn Bragg
@@ -578,7 +476,6 @@
 1460. The Strand - A World of Arts
 1461. Book Review
 1462. On Being with Krista Tippett
--1463. World Book Club
 1464. Common Sense with Dan Carlin
 1465. Best of YouTube (video)
 1467. The Dan Patrick Show: Podcast
@@ -586,21 +483,20 @@
 1469. ESPN: Football Today
 1472. 5 live Football Daily
 1473. ESPN: The B.S. Report with Bill Simmons
-1474. ESPN Chicago: Waddle and Silvy
+1474. ESPN Chicago: Waddle & Silvy
 1475. ESPN: PTI
-1476. ESPN Radio: SVP and Russillo
+1476. ESPN Radio: SVP & Russillo
 1477. MLB Network: Intentional Talk
 1478. Why Today Doesn't Suck
 1479. shralp! snowboarding video news
 1481. Footballguys.com - The Audible - Fantasy Football Info for Serious Fans
-1483. The Best of the UFC ae
+1483. The Best of the UFC®
 1484. Freeskier Magazine Podcast
 1487. Element
 1488. The Basketball Jones Video Podcast
 1490. Real Sports with Bryant Gumbel
 1493. Running Times
 1494. ESPN: Fantasy Focus Baseball
--1497. ESPN Radio Daily
 1498. Wall Street Journal Tech News Briefing
 1499. Tech News Today
 1500. Tech News Today Video (large)
@@ -616,9 +512,9 @@
 1514. Android App Addicts
 1515. TechStuff
 1516. Leo Laporte - The Tech Guy
-1517. this WEEK in TECH - MP3 Edition
+1517. This WEEK in TECH - MP3 Edition
 1518. iMore show
-1519. Into Tomorrow with Dave Graveli
+1519. Into Tomorrow with Dave Graveline
 1520. The Social Hour
 1522. Windows Weekly
 1523. iPad Today Video (large)
@@ -627,23 +523,11 @@
 1527. techzing tech podcast
 1529. This Week in Computer Hardware
 1530. Today in iOS Podcast - The Unofficial iOS, iPhone, iPad and iPod Touch News and iPhone Apps Podcast
--1531. The iPad Show (video)
 1532. Tech Weekly
 1533. Geek News Central Audio
 1535. The Engadget Show
 1536. NYT's Circuits with David Pogue (Video)
--1539. IT Conversationsne
--1541. iMore Special Edition
--1542. On The Verge
--1543. TechCrunch Headlines
 1546. Lifehacker (HD MP4 - 30fps)
--1547. Lifehacker (Large MP4)
--1548. Build and Analyze
--1549. Convertcast
--1551. The Android App Show (video)
--1552. Futures in Biotech
--1553. Dr. Kiki's Science Hour
--1554. PRI's The World: Technology
 1557. KQED Science News
 1558. Travel with Rick Steves
 1559. Amateur Traveler Podcast | travel for the love of it
@@ -651,7 +535,6 @@
 1562. Travel with Rick
 1563. Irish Fireside
 1565. The Rest of Everest
--1566. Yosemite Nature Notes
 1567. IGN Games Podcasts
 1568. IGN.com - Daily Fix (Video)
 1569. Video Game Outsiders
@@ -661,22 +544,12 @@
 1573. 4Player Podcast
 1575. Official Xbox Magazine
 1576. Video Reviews - GameTrailers.com
-1577. PC Gamer bb US Podcast
+1577. PC Gamer » US Podcast
 1578. Fast Karate for the Gentleman
 1579. Weekend Confirmed: The Video Game Show
 1580. Rebel FM
 1581. Major Nelson Radio
--1582. Big Red Barrel bb BRB WTF
--1583. Big Red Barrel bb Playstation Podcast
--1584. Barrel Roll! - A Video Game Podcast
--1585. X-Play's Video Podcast
 1586. GeekNights Mondays: Science Technology Computing
--1587. The Fanboys bb Podcasts
--1589. 1UP.com - 1UP Radio
-1591. ABC Denver
-1594. NBC Denver
-1597. CBS Denver
-1600. Fox Denver
 1601. Revival Television Network
 1604. CTN
 1607. CTN Lifestyle
@@ -685,8 +558,7 @@
 1621. FightBox
 1624. DocuBox
 1627. FashionBox
-1630. WNBC 4.2 NY
--1654. WXTV Univision
+1630. COZI-TV NY (WNBC 4.2)
 1666. BBC Parliament
 1672. EuroNews
 1675. CCTV News
@@ -698,24 +570,20 @@
 1690. Dancing Machine TV
 1693. Double Feature TV
 1696. Inside Music TV
-1699. ABC Boston
-1702. NBC Boston
-1705. CBS Boston
-1708. Fox Boston
 1711. Psychic Today
 1714. 30a TV
 1717. France 2
 1720. France 5
 1723. France 3
 1726. iTELE
-1727. Fun little movies
-1729. ARTE Franceais
+1727. Fun Little Movies
+1729. ARTE Français
 1732. RIK
 1735. Perviy kanal Europa
 1738. RTR Planeta
 1741. Music Box Russia
 1744. Rossiya 24
-1747. RBC TV
+1747. RBK TV
 1753. Home and Green Living
 1756. Game Time
 1759. What America Thinks
@@ -730,8 +598,6 @@
 1790. Al Fayhaa TV
 1793. Eri TV
 1796. Suryoyo Sat
--1799. Mediaset Italia
--1802. TGCom 24
 1805. CBS Drama
 1808. CBS Reality
 1811. CBS Reality+1
@@ -741,25 +607,18 @@
 1823. ITV3+1
 1826. ITV4+1
 1829. Food Network+1
-1832. ABC Atlanta
-1835. NBC Atlanta
-1838. CBS Atlanta
-1841. Fox Atlanta
 1844. Almavision TV Phoenix
 1847. KASW 6 Phoenix
 1850. KPAZ 21 Phoenix
--1853. Univision Phoenix
 1855. Bruce Lee TV
 1858. College hotties
 1861. Fun Little Kids
 1864. LIVE BOXING
-1867. Omniverse Health and Wellness
+1867. Telos Digital Television 
 1870. Bible Discovery TV
 1876. Catholic TV
 1885. Enlace Juvinel
-1891. GodTV
 1897. iPoint TV
--1900. Jesus Christ TV
 1903. KGPF
 1912. Safe TV
 1915. Sonlife Broadcast Network
@@ -767,9 +626,7 @@
 1924. Vida Atlanta
 1927. Vida Mundial
 1933. Word Broadcasting Network
-1936. Bounce Washington
 1939. The CW Washington
-1942. Cozi TV Washington
 1945. WETA 26 Washington, D.C.
 1946. Caribbean Lifestyle Channel
 1948. FilmOn Tennis
@@ -778,15 +635,15 @@
 1958. ICN English
 1964. Hollywood Fast Lane
 1967. Kung Fu Classics
-1970. Hooters Calendar Girls
+1970. Hooters' Calendar Girls
 1973. MHL TV
 1976. Guido
 1981. RT Documentary
 1984. OHTV
-1987. Placenta Party
 1988. 1 on 1 Boxing TV
 1991. iFlix TV
 1997. Hispan TV
+2000. Bikini Kitchen
 2003. VENICEBEACHLIVECAM.TV
 2008. BAMMA USA
 2011. KQED 9 San Francisco
@@ -794,20 +651,20 @@
 2017. KFSF 66.2 San Francisco
 2020. Moxie
 2023. Oldie Goldie
-2026. KCTS 9 Seattle
-2029. KVOS 12.2 Seattle
-2032. KVOS 12.1 Seattle
-2035. KCTS 9 V-me Seattle
-2038. KSTV 11 Seattle
+2026. PBS Seattle (KCTS 9.1)
+2029. TheCoolTV Seattle (KVOS 12.2)
+2032. MeTV Seattle (KVOS 12.1)
+2035. V-me Seattle (KCTS 9.2)
+2038. CW Seattle (KSTW 11)
 2044. Jennifer Stano
 2047. AMI-TV East
 2050. AMI-TV West
-2053. CTV Winnipeg
-2056. CTV Montreal
-2059. CTV Ottawa
-2062. CTV Two Vancouver Island
+2053. CFRN CTV Edmonton
+2056. CKCK CTV Regina
+2059. CFCN-5 CTV Lethbridge
+2062. CICC CTV Yorkton
 2063. Mixed Media Network
-2066. Jamaica Shopping Network
+2066. Caribbean Shopping Channel
 2069. Astral-Disney Playhouse
 2072. The Raw Report
 2074. EntrepreneurOnFire
@@ -824,9 +681,8 @@
 2107. CNBC's People, Planet and Profit
 2110. CNBC's The Business of Innovation
 2113. CNBC's On The Money
-2116. The Mike O'Meara Show
-2119. HandM Fashion Video
-2122. ThreadBanger - D.I.Y Fashion and Style
+2119. H&M Fashion Video
+2122. ThreadBanger - D.I.Y Fashion & Style
 2125. Style Studio - Fashion Video from Style.com
 2128. GUCCI
 2131. Style Videos: Runway Fashion, Parties, and More from Style.com
@@ -834,7 +690,7 @@
 2137. Balanced Bites: Modern paleo living. | Blog Talk Radio Feed
 2140. Couch to 5K (C25K) 5K101.com
 2143. Girlfriend M.D. Quick and Dirty Tips to Understand Your Body
-2146. The Great Detectives of Old Time Radio \u00bb Podcast
+2146. The Great Detectives of Old Time Radio Podcast
 2149. Corsten's Countdown Official Podcast by FLAIX.fr
 2152. NPR: Tiny Desk Concerts - Video Podcast
 2155. RA Podcast
@@ -845,7 +701,7 @@
 2170. WFUV's The Alternate Side In Session
 2173. UKF Music Podcast
 2176. The Official Mark Levin Audio Rewind
-2179. UVTV: Heavy Metal Music Videos, Concert Footage and Interviews
+2179. UVTV: Heavy Metal Music Videos, Concert Footage & Interviews
 2182. Music - The Interface
 2185. IndieFeed: Hip Hop Music
 2188. Acoustic Long Island VIDEO
@@ -869,222 +725,56 @@
 2242. The Ethicist
 2245. Tech Feed News (HD MP4 - 30fps)
 2252. America's Auction Network
-2260. RTV Los Angeles
-2261. CS-TV Los Angeles
-2262. TuffTV Los Angeles
-2263. Vmas Los Angeles
-2264. JTV Los Angeles
-2266. LivWell Los Angeles
-2267. LWN-SD Los Angeles
-2268. RTV Los Angeles
-2269. CS-TV Los Angeles
-2270. TuffTV Los Angeles
-2271. Vmas Los Angeles
-2272. JTV Los Angeles
-2273. KCAL-DT Los Angeles
-2274. USARMTV Los Angeles
-2275. KIIO-LD Los Angeles
+2265. KABC-DT Los Angeles
+2276. KTTV Los Angeles
 2277. KCOP HD Los Angeles
-2278. KTTV SD Los Angeles
-2279. BOUNCE TV Los Angeles
-2280. Fox Movies Los Angeles
-2281. LA18.1 Los Angeles
-2282. LA18.2 Los Angeles
-2283. LA18.3 Los Angeles
-2284. LA18.4 Los Angeles
-2285. LA18.5 Los Angeles
-2286. LA18.6 Los Angeles
-2287. LA18.7 Los Angeles
-2288. LA18.8 Los Angeles
-2289. LA18.9 Los Angeles
-2290. Hombre Nuevo Los Angeles
-2291. AMG-TV Los Angeles
-2292. CEN-TV Los Angeles
-2293. TOCANDO Los Angeles
-2294. C-STORE Los Angeles
-2295. KSSE-FM Los Angeles
-2296. CCTV Los Angeles
-2297. TSTV Los Angeles
-2298. TBWTV Los Angeles
-2299. HATV Los Angeles
-2300. FILAM Los Angeles
-2301. WCETV Los Angeles
-2302. GDTV Los Angeles
-2303. Skylink Los Angeles
-2304. KVMD-DT Los Angeles
-2305. UDG Los Angeles
-2306. KBEH-DT-5 Los Angeles
-2307. KBEH-DT Los Angeles
-2308. KBEH-DT Los Angeles
-2309. KBEH-DT Los Angeles
-2310. KBEH-DT Los Angeles
-2311. KBEH-DT Los Angeles
-2312. KBEH-DT Los Angeles
-2313. KBEH-DT Los Angeles
-2314. HSN Los Angeles
-2315. 18.8 Los Angeles
-2316. ALIENTO Los Angeles
-2317. TESTING Los Angeles
-2318. CEN-TV Los Angeles
-2319. AMG-TV Los Angeles
-2320. CSTORE Los Angeles
-2321. KCET-HD Los Angeles
-2322. KCET-LN Los Angeles
-2323. KCET-Vm Los Angeles
-2324. N H K Los Angeles
-2325. Telefutura Los Angeles
 2326. KTLA-DT Los Angeles
-2327. Antenna Los Angeles
-2328. This TV Los Angeles
-2329. KDOC-HD Los Angeles
 2330. METVLA  Los Angeles
-2331. ESNE    Los Angeles
-2332. NDOC    Los Angeles
-2333. V-NEWS  Los Angeles
 2334. KTBN-TBN Los Angeles
-2335. KTBN-TCC Los Angeles
-2336. KTBN-JCTV Los Angeles
-2337. KTBN-Enlace Los Angeles
-2338. KTBN-SOAC Los Angeles
 2339. KMEX-DT Los Angeles
-2340. KRCA DT Los Angeles
-2341. HTTV US Los Angeles
-2342. VNN TV Los Angeles
-2343. IMIGRAN Los Angeles
-2344. STVUSA Los Angeles
 2345. KNBC Los Angeles
-2346. COZI-TV Los Angeles
-2347. KPXN ION Los Angeles
 2348. KPXN qubo Los Angeles
-2349. IONLife Los Angeles
-2350. Shop Los Angeles
-2351. KPXN QVC Los Angeles
-2352. NFL Los Angeles
-2353. Starz Los Angeles
-2354. Airbox Los Angeles
-2356. Exitos TV KVEA Corona / Los Angeles
-2357. KVHD-LD Los Angeles
-2358. KVHD-LD Los Angeles
-2359. KVHD-LD Los Angeles
-2360. KVHD-LD Los Angeles
-2361. KVHD-LD Los Angeles
-2362. KVHD-LD Los Angeles
-2363. KVHD-LD Los Angeles
-2364. KVHD-LD Los Angeles
-2365. KVHD-LD Los Angeles
-2366. KVHD-LD Los Angeles
-2367. KVHD-LD Los Angeles
-2368. KVHD-LD Los Angeles
-2369. KVHD-LD Los Angeles
-2370. KLCS-1 Los Angeles
-2371. KLCS-2 Los Angeles
-2372. KLCS-3 Los Angeles
-2373. KLCS-4 Los Angeles
-2374. [0007] Los Angeles
-2376. KWHYSD1 Los Angeles
-2377. KWHYSD2 Los Angeles
-2378. KWHYSD3 Los Angeles
-2379. KWHYSD4 Los Angeles
-2380. KWHYSD5 Los Angeles
-2383. KILM Los Angeles
-2384. SINO tv Los Angeles
-2385. third Los Angeles
-2386. Veria Los Angeles
-2387. A LA MANERA DE DIOS Los Angeles
-2388. Mako Los Angeles
-2389. A LA MANERA DE DIOS Los Angeles
-2390. A LA MANERA DE DIOS Los Angeles
-2391. A LA MANERA DE DIOS Los Angeles
-2392. PEACE TV Los Angeles
-2393. KTAV-LD Los Angeles
-2394. A LA MANERA DE DIOS Los Angeles
-2395. A LA MANERA DE DIOS Los Angeles
-2396. KAZA-D2 Los Angeles
-2397. KAZA-D3 Los Angeles
-2398. KAZA-DT?\u0010 Los Angeles
+2355. KVEA Los Angeles
+2375. KWHY-DT Los Angeles
+2381. KCBS-HD Los Angeles
+2398. KAZA-DT Los Angeles
 2399. PBS-HD Los Angeles
-2400. PBS-OC Los Angeles
-2401. WORLD Los Angeles
-2402. Daystar Los Angeles
-2403. KJLA-DT Los Angeles
-2404. STV Los Angeles
-2405. SET Los Angeles
-2406. IBC-TV Los Angeles
-2407. ZWTV Los Angeles
-2408. VBS-TV Los Angeles
-2409. ENT Los Angeles
-2410. VNA-TV Los Angeles
-2411. SGTV Los Angeles
-2412. VFACE Los Angeles
-2413. HSN Los Angeles
-2414. 18.8 Los Angeles
-2415. ALIENTO Los Angeles
-2416. TESTING Los Angeles
-2417. NTDTV Los Angeles
-2418. ICN Los Angeles
-2419. amga tv Los Angeles
-2420. KXLA-DT Los Angeles
-2421. KXLADT3 Los Angeles
-2422. MBN Los Angeles
-2423. ARRANG Los Angeles
-2424. IAVC Los Angeles
-2425. GETV Los Angeles
-2426. SKY-CAN Los Angeles
 2430. WABC-HD New York
-2431. LivWell? New York
-2432. LIVWELL New York
+2431. Live Well New York
 2433. PIX11 New York
 2434. Antenna New York
 2435. This TV New York
 2436. KIDS New York
 2437. V-ME New York
 2438. WNET-HD New York
-2439. [0065] New York
-2440. [0066] New York
-2441. UAN New York
-2442. GCN New York
-2443. MEXI New York
 2444. TVC LAT New York
-2445. SWAGAT New York
-2446. SAB TV New York
 2447. NYLIFE  New York
-2448. NYGOV   New York
-2449. CUNY    New York
 2450. WASA New York
-2451. Chinese-1 New York
-2452. Chinese-2 New York
-2453. WASA-SD New York
-2454. WNBC    New York
+2454. WNBC New York
 2455. COZI-TV New York
 2456. WFUT-DT New York
 2457. WXTV-DT Univision New York
 2458. WPXN ION New York
 2459. WPXN qubo New York
 2460. IONLife New York
-2461. Shop New York
-2462. WPXN QVC New York
 2463. RedZone New York
 2464. Starz New York
 2465. Airbox New York
 2466. WCBS-HD New York
 2467. CBSNY+  New York
 2468. WNJU-HD New York
-2469. [0005] New York
 2470. Exitos  New York
-2471. Soi     New York
-2472. WWOR-TV My9 Secaucus New York
-2473. WNYW-SD New York
 2474. BOUNCE New York
 2475. MundoFox New York
 2476. WXTV-DT New York
 2477. WFUT-DT Telefutura New York
-2478. WNYW   ?\u0010 New York
+2478. WNYW New York
 2479. Movies! New York
 2480. WWOR-SD New York
 2482. WEDU 3.1 Tampa
 2485. WMOR 32.1 Tampa
-2488. WTTA 38.1 Tampa
-2491. WTOG 44.1 Tampa
+2488. MyNetworkTV Tampa (WTTA 38.1)
+2491. CW Tampa (WTOG 44.1)
 2496. Bounce Washington
 2497. Radar Washington
 2502. MHz1 Washington
@@ -1115,21 +805,84 @@
 2532. CW50 Washington
 2533. AntTV Washington
 2534. ThisTV Washington
-2536. WSFL 39.1 Miami
-2539. WFUN 48.1 Miami
+2536. CW Miami (WSFL 39.1)
+2539. Atevé Miami (WFUN 48.1)
 2545. WPBT 2.1 Miami
 2548. WJYS 62.1 Chicago
 2551. WGN 9.1 Chicago
 2554. WTTW 11.1 Chicago
-2560. KWGN 2.1 Denver
-2563. KRMA 6.1 Denver
+2560. CW Denver (KWGN 2.1)
+2563. Rocky Mountain PBS Denver (KRMA 6.1)
 2569. WBPX 68.1 Boston
 2572. WLVI 56.1 Boston
 2575. WGBH 2.1 Boston
 2578. KERA 13.1 Dallas
-2581. KDAF 33.1 Dallas
-2587. WPCH 17.1 Atlanta
-2590. WUPA Atlanta
-2593. WPBA Atlanta
+2581. CW Dallas (KDAF 33.1)
+2587. Peachtree TV Atlanta (WPCH 17.1)
+2590. CW Atlanta (WUPA 69)
+2593. PBA 30 Atlanta (WPBA)
 2596. FilmOn Taste Test
-2599. US Paddle Tennis
+2600. Rotana
+2603. Rotana Clip
+2606. Rotana Khalijiah
+2609. Rotana Classic
+2612. Rotana Masriya
+2615. Rotana Cinema
+2618. Rotana Aflam
+2621. FilmOn Reality
+2624. Telenovelas TV
+2627. VU Network
+2633. Biography TV
+2635. FOX
+2638. Miss Top of the World 
+2641. DW English
+2644. ZJTV
+2647. BJTV
+2650. Anhui TV
+2653. Dongnan SETV
+2656. Xiamen XMTV
+2659. Jiangxi JXTV
+2662. Guangxi GXTV
+2665. Yunnan YNTV
+2668. Hainan LVYOU LYTV
+2674. Kazakh TV
+2677. One America News
+2678. Mega Destinations
+2684. Player TV
+2687. MegaMe TV
+2690. Sprockets & Splices
+2693. DW (Arabia)
+2696. FusionPlus TV
+2699. Chillings
+2701. QVC PLUS
+2704. Product Showcase Network
+2707. QUEST
+2710. Living History Channel
+2716. ShockMasters
+2719. Movie Loft TV
+2725. Live From the Center of the Universe
+2726. Bikini Beach TV
+2728. American Business TV
+2731. The Venture Channel
+2734. Your Family Entertainment
+2737. Roopstigo
+2746. Filmon USA Live TV
+2749. FastnFun Box HD
+2752. Filmbox Arthouse HD
+2755. 360 TuneBox HD
+2756. KIKA
+2759. ZDF
+2762. ZDF INFOKANAL
+2765. BFM TV
+2771. Eurosport Deutschland
+2777. CANAL 24 HORAS
+2780. TVE LA 1
+2786. CCTV9 Documentary
+2789. FRANCE 24 ARABIC
+2792. FRANCE 24 FRENCH
+2795. Pianeta TV
+2807. BVN TV
+2819. Bikini Down Under
+2822. RMC Live
+2828. DRTV
+2834. TV47

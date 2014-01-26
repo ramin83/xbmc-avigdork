@@ -67,14 +67,18 @@ def PlayChannel(chNum, referrerCh=None, ChName=None):
 		return
 		
 	channelName, programmename, description, iconimage, streamUrl, startdatetime, enddatetime = GetNowPlaying(prms, chNum, referrerCh, ChName)
+
 	fullName = " [B]{0}[/B]".format(channelName)
 	if programmename <> "":
-		fullName = "{0} - {1}".format(fullName,  programmename)
+		fullName = "{0} - {1}".format(fullName, programmename)
 	if startdatetime > 0 and enddatetime > 0:
 		fullName = '{0} [{1}-{2}]'.format(fullName, datetime.datetime.fromtimestamp(startdatetime).strftime('%H:%M'), datetime.datetime.fromtimestamp(enddatetime).strftime('%H:%M'))
 
 	print '--------- Playing: ch="{0}", name="{1}" ----------'.format(chNum, channelName)
-	PlayUrl(streamUrl, fullName, iconimage)
+	try:
+		PlayUrl(streamUrl, fullName, iconimage)
+	except:
+		PlayUrl(streamUrl.replace('high','low'), fullName, iconimage)
 	
 def GetNowPlaying(prms, chNum, referrerCh=None, ChName=None):
 	iconimage = iconPattern.replace('<channelNum>',str(chNum))
@@ -124,7 +128,7 @@ def GetNowPlaying(prms, chNum, referrerCh=None, ChName=None):
 
 	#streamUrl = "{0} app={1} playpath={2} swfUrl={3} swfVfy=true live=true".format(url, app, playPath, swfUrl)
 	streamUrl = "{0} app={1} playpath={2} live=true".format(url, app, playPath)
-	return channelName, programmename, description, iconimage, streamUrl, startdatetime, enddatetime
+	return channelName.encode('utf-8'), programmename.encode('utf-8'), description.encode('utf-8'), iconimage, streamUrl, startdatetime, enddatetime
 
 def PlayUrl(url, ChName, iconimage=None):
 	if (iconimage == None):
@@ -166,10 +170,10 @@ def ChannelGuide(chNum, referrerCh=None, ChName=None):
 			enddatetime = int(prm["enddatetime"])
 			if server_time > startdatetime:
 				continue
-			description=prm["programme_description"]
+			description=prm["programme_description"].encode('utf-8')
 			startdatetime=datetime.datetime.fromtimestamp(startdatetime).strftime('%d/%m %H:%M')
 			enddatetime=datetime.datetime.fromtimestamp(enddatetime).strftime('%H:%M')
-			programmename='[{0}-{1}] [B]{2}[/B]'.format(startdatetime,enddatetime,prm["programme_name"])
+			programmename='[{0}-{1}] [B]{2}[/B]'.format(startdatetime,enddatetime,prm["programme_name"].encode('utf-8'))
 			addDir(programmename, chNum, 99, iconimage, description, '', True)
 		
 	xbmcplugin.setContent(int(sys.argv[1]), 'movies')
