@@ -1,3 +1,7 @@
+v1.9.2
+Change -Wwhen playing a channel, there "now playing program" label and "next program" label too.
+Change - TV-Guide's List-items showing now programs pictures.
+-------------
 v1.9.1
 Fix - Playing more channels.
 Change - TV-Guide now open from context menu (right click) of channel.

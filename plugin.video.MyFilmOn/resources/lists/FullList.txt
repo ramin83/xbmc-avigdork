@@ -9,7 +9,6 @@
 20. Food Network
 21. Fashion TV
 22. Channel 5
-23. RTVE
 25. BBC Two
 26. ITV3
 27. BBC News
@@ -50,7 +49,7 @@
 289. The Spirit Word Channel
 295. My Combat Channel
 298. France24
-299. RT Espanol
+299. RT Español
 301. My Family TV
 302. FilmOn Breaking News
 303. RTP international
@@ -101,7 +100,6 @@
 380. Bikini TeeVee
 381. WW2 TeeVee
 382. Sci-Fi Telly
-383. Veg TV
 384. The Western Channel
 385. The Noise Network
 386. GeoBeats Travel
@@ -117,7 +115,7 @@
 399. The Church Channel
 400. JCTV
 401. Smile of a Child
-402. RandR Television
+402. R&R Television
 403. AWE
 406. World of Martial Arts Television
 411. Hollywoodland Channel
@@ -179,7 +177,7 @@
 638. OPERA PLUS
 641. CHAMBER MUSIC
 644. TODAY'S LATIN POP
-647. RETRO RandB
+647. RETRO R&B
 650. NO FENCES
 653. DANCE CLASSICS
 656. HOLIDAY HITS
@@ -203,7 +201,6 @@
 710. Eco-Rico
 713. UFC Next
 716. Popcorn TV
-719. Emba Kids
 725. DVIDs TV
 728. The Miki Show
 733. Dave Live
@@ -219,8 +216,6 @@
 790. Party TeeVee
 793. Kartoon Klassics
 796. Ginx
-799. Animal Atlas
-802. Masked Republic AAA Lucha Libre
 805. The War Channel
 808. UWTV
 812. Trans TV
@@ -242,7 +237,6 @@
 950. 247Clubber
 979. Ebru TV US
 980. AFL Classic
-1001. WTTG 5 Washington
 1007. ABC Australia
 1013. Supa Pirate Booty Hunt
 1016. World of...
@@ -250,7 +244,6 @@
 1022. Simply Me
 1033. n-tv
 1039. Yesterday
-1042. Vintage Music TV
 1045. Action Zone
 1049. OBXTV
 1052. Matriarch TV
@@ -290,9 +283,9 @@
 1166. Wall Street Journal on Small Business
 1167. NPR: Planet Money Podcast
 1168. Get-It-Done Guy's Quick and Dirty Tips to Work Less and Do More
-1169. MSNBC's "Your Business"
+1169. MSNBC's Your Business
 1170. CNBC's "Fast Money"
-1171. CNBC's "The Suze Orman Show"
+1171. CNBC's "The Suze Orman Show"- Full Show
 1172. WealthTrack
 1173. CNBC's "Options Action"
 1176. SPEED X Extreme Action Clips
@@ -432,7 +425,6 @@
 1392. 60 Minutes - Full Audio
 1393. FOX News Sunday
 1394. President Obama's Weekly Address
-1395. Washington Week Video Podcast | PBS
 1396. FRONTLINE: Audiocast | PBS
 1397. WeatherBrains
 1400. PediaCast
@@ -560,7 +552,7 @@
 1627. FashionBox
 1630. COZI-TV NY (WNBC 4.2)
 1666. BBC Parliament
-1672. EuroNews
+1672. Euronews English
 1675. CCTV News
 1676. Filmon Studio
 1678. Job Channel Network
@@ -617,17 +609,12 @@
 1867. Telos Digital Television 
 1870. Bible Discovery TV
 1876. Catholic TV
-1885. Enlace Juvinel
 1897. iPoint TV
+1900. Jesus Christ TV
 1903. KGPF
 1912. Safe TV
-1915. Sonlife Broadcast Network
-1918. Tabernacle Real
 1924. Vida Atlanta
 1927. Vida Mundial
-1933. Word Broadcasting Network
-1939. The CW Washington
-1945. WETA 26 Washington, D.C.
 1946. Caribbean Lifestyle Channel
 1948. FilmOn Tennis
 1951. VoA Persian TV
@@ -643,7 +630,6 @@
 1988. 1 on 1 Boxing TV
 1991. iFlix TV
 1997. Hispan TV
-2000. Bikini Kitchen
 2003. VENICEBEACHLIVECAM.TV
 2008. BAMMA USA
 2011. KQED 9 San Francisco
@@ -652,8 +638,6 @@
 2020. Moxie
 2023. Oldie Goldie
 2026. PBS Seattle (KCTS 9.1)
-2029. TheCoolTV Seattle (KVOS 12.2)
-2032. MeTV Seattle (KVOS 12.1)
 2035. V-me Seattle (KCTS 9.2)
 2038. CW Seattle (KSTW 11)
 2044. Jennifer Stano
@@ -725,20 +709,21 @@
 2242. The Ethicist
 2245. Tech Feed News (HD MP4 - 30fps)
 2252. America's Auction Network
-2265. KABC-DT Los Angeles
-2276. KTTV Los Angeles
-2277. KCOP HD Los Angeles
+2291. AMG-TV Los Angeles
+2296. CCTV Los Angeles
+2321. KCET-HD Los Angeles
 2326. KTLA-DT Los Angeles
-2330. METVLA  Los Angeles
-2334. KTBN-TBN Los Angeles
+2327. Antenna Los Angeles
+2329. KDOC-HD Los Angeles
 2339. KMEX-DT Los Angeles
-2345. KNBC Los Angeles
+2347. KPXN ION Los Angeles
 2348. KPXN qubo Los Angeles
-2355. KVEA Los Angeles
-2375. KWHY-DT Los Angeles
-2381. KCBS-HD Los Angeles
+2349. IONLife Los Angeles
 2398. KAZA-DT Los Angeles
 2399. PBS-HD Los Angeles
+2401. WORLD Los Angeles
+2403. KJLA-DT Los Angeles
+2420. KXLA-DT Los Angeles
 2430. WABC-HD New York
 2431. Live Well New York
 2433. PIX11 New York
@@ -750,17 +735,13 @@
 2444. TVC LAT New York
 2447. NYLIFE  New York
 2450. WASA New York
-2454. WNBC New York
 2455. COZI-TV New York
 2456. WFUT-DT New York
 2457. WXTV-DT Univision New York
 2458. WPXN ION New York
 2459. WPXN qubo New York
 2460. IONLife New York
-2463. RedZone New York
-2464. Starz New York
 2465. Airbox New York
-2466. WCBS-HD New York
 2467. CBSNY+  New York
 2468. WNJU-HD New York
 2470. Exitos  New York
@@ -771,37 +752,15 @@
 2478. WNYW New York
 2479. Movies! New York
 2480. WWOR-SD New York
-2482. WEDU 3.1 Tampa
 2485. WMOR 32.1 Tampa
-2488. MyNetworkTV Tampa (WTTA 38.1)
-2491. CW Tampa (WTOG 44.1)
-2496. Bounce Washington
-2497. Radar Washington
-2502. MHz1 Washington
-2503. MHz2 Washington
-2504. MHz3 Washington
-2505. MHz4 Washington
-2506. MHz5 Washington
-2507. MHz6 Washington
-2508. WETA-HD Washington
+2493. WJLA-ME Washington
 2509. WETA UK Washington
 2510. KIDS Washington
 2511. TV26 Washington
-2512. WHUT-HD Washington
-2513. WHUT-SD Washington
-2514. [0008] Washington
-2515. [0009] Washington
 2516. ION Washington
 2517. WPXW qubo Washington
 2518. WPXW ION Life Washington
-2519. WPXW Shop Washington
 2520. WDCA DT Washington
-2521. MOVIES! Washington
-2524. WMAR-HD Washington
-2525. WMARDT1 Washington
-2526. WNUV-HD Washington
-2528. ThisTV Washington
-2529. Country Washington
 2532. CW50 Washington
 2533. AntTV Washington
 2534. ThisTV Washington
@@ -813,7 +772,7 @@
 2554. WTTW 11.1 Chicago
 2560. CW Denver (KWGN 2.1)
 2563. Rocky Mountain PBS Denver (KRMA 6.1)
-2569. WBPX 68.1 Boston
+2569. ION Boston 9(WBPX 68.1)
 2572. WLVI 56.1 Boston
 2575. WGBH 2.1 Boston
 2578. KERA 13.1 Dallas
@@ -830,7 +789,6 @@
 2615. Rotana Cinema
 2618. Rotana Aflam
 2621. FilmOn Reality
-2624. Telenovelas TV
 2627. VU Network
 2633. Biography TV
 2635. FOX
@@ -866,7 +824,6 @@
 2731. The Venture Channel
 2734. Your Family Entertainment
 2737. Roopstigo
-2746. Filmon USA Live TV
 2749. FastnFun Box HD
 2752. Filmbox Arthouse HD
 2755. 360 TuneBox HD
@@ -876,7 +833,6 @@
 2765. BFM TV
 2771. Eurosport Deutschland
 2777. CANAL 24 HORAS
-2780. TVE LA 1
 2786. CCTV9 Documentary
 2789. FRANCE 24 ARABIC
 2792. FRANCE 24 FRENCH
@@ -885,4 +841,28 @@
 2819. Bikini Down Under
 2822. RMC Live
 2828. DRTV
+2831. Fighting Athletes Network
 2834. TV47
+2851. WGBH-HD Boston
+2852. World Boston (WGBH 2.2)
+2857. MOVIES! Boston (WFXT 25.2)
+2858. MyNetworkTV Boston (WSBK-TV 38.1)
+2859. CW Boston (WLVI 56.1)
+2862. This TV Boston (WHDH 7.2)
+2863. Create Boston (WGBH 44.3)
+2864. GBH Kids 44.4 Boston
+2865. WGBX-HD 44.1 Boston
+2866. Daystar Boston (WYDN-DT 48.1)
+2870. Filmon.TV SkyUK
+2873. VertroTV
+2876. RMC Comedy
+2885. Nub TV
+2888. Corey Feldman
+2891. Global Music TV
+2894. TV GOLD
+2897. VSVN Sports
+2900. Euronews French
+2903. Euronews German
+2906. Euronews Spanish
+2909. Euronews Portuguese
+2912. Euronews Italian
